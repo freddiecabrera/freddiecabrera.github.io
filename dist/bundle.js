@@ -19736,11 +19736,38 @@
 	  displayName: 'SplashPage',
 	  render: function render() {
 	    return _react2.default.createElement(
-	      'video',
-	      { id: 'BackgroundVideo', muted: true, loop: true, autoPlay: true },
-	      _react2.default.createElement('source', {
-	        src: 'http://bit.ly/22bptnw'
-	      })
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'video',
+	        { id: 'BackgroundVideo', muted: true, loop: true, autoPlay: true },
+	        _react2.default.createElement('source', {
+	          src: 'http://bit.ly/1UHLoUb'
+	        })
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'sp-text-container' },
+	        _react2.default.createElement(
+	          'h3',
+	          null,
+	          'Freddie Cabrera'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Web Developer'
+	        ),
+	        _react2.default.createElement(
+	          'a',
+	          { className: 'btn-floating btn-large waves-effect waves-light pink accent-3 animated infinite pulse' },
+	          _react2.default.createElement(
+	            'i',
+	            { className: 'material-icons' },
+	            'more_horiz'
+	          )
+	        )
+	      )
 	    );
 	  }
 	});

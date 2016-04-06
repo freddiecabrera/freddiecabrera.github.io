@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
 #BackgroundVideo{
   position: fixed;
   top: 50%;
@@ -12,4 +14,44 @@
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   background-size: cover;
+}
+
+.sp-text-container {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-animation: fadein 10s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 10s; /* Firefox < 16 */
+        -ms-animation: fadein 10s; /* Internet Explorer */
+         -o-animation: fadein 10s; /* Opera < 12.1 */
+            animation: fadein 10s;
+}
+
+  @keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  /* Firefox < 16 */
+  @-moz-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  /* Safari, Chrome and Opera > 12.1 */
+  @-webkit-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  /* Internet Explorer */
+  @-ms-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
 }
