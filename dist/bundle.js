@@ -19758,7 +19758,7 @@
 	        _react2.default.createElement(
 	          'h4',
 	          { style: _style.spHeader },
-	          'Freddie Cabrera'
+	          'HELLO I\'M FREDDIE'
 	        ),
 	        _react2.default.createElement(
 	          'p',
@@ -19813,6 +19813,10 @@
 	    top: '50%',
 	    left: '50%',
 	    transform: 'translate(-50%, -50%)'
+	  },
+	  socIcons: {
+	    height: '40px',
+	    margin: '5px'
 	  }
 	};
 

@@ -24,6 +24,10 @@ const styles = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)'
+  },
+  socIcons: {
+    height: '40px',
+    margin: '5px'
   }
 }
 
