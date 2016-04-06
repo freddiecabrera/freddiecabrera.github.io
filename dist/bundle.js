@@ -19730,6 +19730,8 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _style = __webpack_require__(160);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var SplashPage = _react2.default.createClass({
@@ -19746,25 +19748,30 @@
 	        })
 	      ),
 	      _react2.default.createElement(
+	        'a',
+	        { className: 'fader', style: _style.verticalText, href: 'mailto:freddie.cabrera@scndhalf.com' },
+	        'freddie.cabrera@scndhalf.com'
+	      ),
+	      _react2.default.createElement(
 	        'div',
-	        { className: 'sp-text-container' },
+	        { className: 'fader', style: _style.spTextContainer },
 	        _react2.default.createElement(
-	          'h3',
-	          null,
+	          'h4',
+	          { style: _style.redColor },
 	          'Freddie Cabrera'
 	        ),
 	        _react2.default.createElement(
 	          'p',
 	          null,
-	          'Web Developer'
+	          'Full Stack Web Developer'
 	        ),
 	        _react2.default.createElement(
 	          'a',
-	          { className: 'btn-floating btn-large waves-effect waves-light pink accent-3 animated infinite pulse' },
+	          { className: 'btn-floating btn-large waves-effect waves-light indigo accent-4 animated infinite pulse' },
 	          _react2.default.createElement(
 	            'i',
 	            { className: 'material-icons' },
-	            'more_horiz'
+	            'play_arrow'
 	          )
 	        )
 	      )
@@ -19773,6 +19780,40 @@
 	});
 
 	module.exports = SplashPage;
+
+/***/ },
+/* 160 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	var styles = {
+	  redColor: {
+	    fontWeight: '700',
+	    fontStyle: 'bold',
+	    color: 'white'
+	  },
+	  verticalText: {
+	    textDecoration: 'none',
+	    textAlign: 'center',
+	    color: '#2962ff',
+	    position: 'fixed',
+	    top: '50%',
+	    left: '90%',
+	    transform: 'rotate(90deg)'
+	  },
+	  spTextContainer: {
+	    fontWeight: '300',
+	    color: 'white',
+	    textAlign: 'center',
+	    position: 'fixed',
+	    top: '50%',
+	    left: '50%',
+	    transform: 'translate(-50%, -50%)'
+	  }
+	};
+
+	module.exports = styles;
 
 /***/ }
 /******/ ]);
