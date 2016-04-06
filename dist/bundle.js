@@ -19737,7 +19737,7 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'video',
-	      { id: 'BackgroundVideo', loop: true, autoPlay: true },
+	      { id: 'BackgroundVideo', muted: true, loop: true, autoPlay: true },
 	      _react2.default.createElement('source', {
 	        src: 'http://bit.ly/22bptnw'
 	      })

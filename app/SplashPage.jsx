@@ -2,7 +2,7 @@ import React from 'react'
 const SplashPage = React.createClass({
   render () {
     return (
-        <video id='BackgroundVideo' loop autoPlay>
+        <video id='BackgroundVideo' muted loop autoPlay>
           <source
             src='http://bit.ly/22bptnw'
           />
