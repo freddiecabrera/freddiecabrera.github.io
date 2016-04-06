@@ -1,11 +1,13 @@
 const styles = {
-  redColor: {
+  spHeader: {
     fontWeight: '700',
     fontStyle: 'bold',
-    color: 'white'
+    color: 'white',
+    fontSize: '65px'
   },
   verticalText: {
     textDecoration: 'none',
+    fontSize: '15px',
     textAlign: 'center',
     color: '#2962ff',
     position: 'fixed',
@@ -14,6 +16,7 @@ const styles = {
     transform: 'rotate(90deg)'
   },
   spTextContainer: {
+    fontSize: '20px',
     fontWeight: '300',
     color: 'white',
     textAlign: 'center',

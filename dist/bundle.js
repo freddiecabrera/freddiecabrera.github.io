@@ -19757,7 +19757,7 @@
 	        { className: 'fader', style: _style.spTextContainer },
 	        _react2.default.createElement(
 	          'h4',
-	          { style: _style.redColor },
+	          { style: _style.spHeader },
 	          'Freddie Cabrera'
 	        ),
 	        _react2.default.createElement(
@@ -19788,13 +19788,15 @@
 	'use strict';
 
 	var styles = {
-	  redColor: {
+	  spHeader: {
 	    fontWeight: '700',
 	    fontStyle: 'bold',
-	    color: 'white'
+	    color: 'white',
+	    fontSize: '65px'
 	  },
 	  verticalText: {
 	    textDecoration: 'none',
+	    fontSize: '15px',
 	    textAlign: 'center',
 	    color: '#2962ff',
 	    position: 'fixed',
@@ -19803,6 +19805,7 @@
 	    transform: 'rotate(90deg)'
 	  },
 	  spTextContainer: {
+	    fontSize: '20px',
 	    fontWeight: '300',
 	    color: 'white',
 	    textAlign: 'center',
