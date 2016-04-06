@@ -19732,13 +19732,18 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var SplashPage = function SplashPage(props) {
-	  return _react2.default.createElement(
-	    'h1',
-	    null,
-	    'Hello World'
-	  );
-	};
+	var SplashPage = _react2.default.createClass({
+	  displayName: 'SplashPage',
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'video',
+	      { id: 'BackgroundVideo', loop: true, autoPlay: true },
+	      _react2.default.createElement('source', {
+	        src: 'https://11-lvl3-pdl.vimeocdn.com/01/1680/5/133404714/392104762.mp4?expires=1459914788&token=0659e40a0a14a99785bd3'
+	      })
+	    );
+	  }
+	});
 
 	module.exports = SplashPage;
 
