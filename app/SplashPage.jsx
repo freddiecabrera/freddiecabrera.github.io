@@ -1,5 +1,6 @@
 import React from 'react'
-import { spHeader, verticalText, spTextContainer, socIcons } from '../styles/style.jsx'
+import { spHeader, verticalText, spTextContainer, socIcons } from '../styles/style'
+import { Link } from 'react-router'
 const SplashPage = React.createClass({
   render () {
     return (

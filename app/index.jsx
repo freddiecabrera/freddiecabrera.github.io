@@ -1,5 +1,5 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import SplashPage from './SplashPage'
+import routes from './config/routes'
 
-ReactDom.render(<SplashPage />, document.getElementById('app'))
+ReactDom.render(routes, document.getElementById('app'))
