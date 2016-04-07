@@ -26,6 +26,10 @@ const NavBar = React.createClass({
   },
   render () {
     return (
+      <div>
+      <div className='bgImageContainer'>
+        <img src="https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?crop=entropy&dpr=2&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300" alt="background-image" className='bgImage'/>
+      </div>
       <div className='navContainer faderTwo'>
       <p className='pTag'>F</p>
         <ul className='menu'>
@@ -36,13 +40,9 @@ const NavBar = React.createClass({
         <li style={tabHolder} href="#">ABOUT</li>
         <li style={tabHolder} href="#">CONTACT</li>
         </ul>
-        <div className='bgImage'>
-          <h3>Testin this mug</h3>
-        </div>
         {this.state.HF}
-        <h1 style={temp}>hello</h1>
       </div>
-
+      </div>
     )
   }
 })

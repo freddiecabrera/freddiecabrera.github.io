@@ -25222,13 +25222,18 @@
 
 	var _NavBar2 = _interopRequireDefault(_NavBar);
 
+	var _Test = __webpack_require__(223);
+
+	var _Test2 = _interopRequireDefault(_Test);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var Home = function Home(props) {
 	  return _react2.default.createElement(
 	    'div',
 	    null,
-	    _react2.default.createElement(_NavBar2.default, null)
+	    _react2.default.createElement(_NavBar2.default, null),
+	    _react2.default.createElement(_Test2.default, null)
 	  );
 	};
 
@@ -25278,60 +25283,55 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      { className: 'navContainer faderTwo' },
+	      null,
 	      _react2.default.createElement(
-	        'p',
-	        { className: 'pTag' },
-	        'F'
-	      ),
-	      _react2.default.createElement(
-	        'ul',
-	        { className: 'menu' },
-	        _react2.default.createElement(
-	          'li',
-	          { style: _style.tabHolder, href: '#' },
-	          'HOME'
-	        ),
-	        _react2.default.createElement(
-	          'li',
-	          { style: _style.tabHolder, href: '#' },
-	          'STACK'
-	        ),
-	        _react2.default.createElement(
-	          'li',
-	          { style: _style.tabHolder, href: '#' },
-	          'SERVICES'
-	        ),
-	        _react2.default.createElement(
-	          'li',
-	          { style: _style.tabHolder, href: '#' },
-	          'RESUME'
-	        ),
-	        _react2.default.createElement(
-	          'li',
-	          { style: _style.tabHolder, href: '#' },
-	          'ABOUT'
-	        ),
-	        _react2.default.createElement(
-	          'li',
-	          { style: _style.tabHolder, href: '#' },
-	          'CONTACT'
-	        )
+	        'div',
+	        { className: 'bgImageContainer' },
+	        _react2.default.createElement('img', { src: 'https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?crop=entropy&dpr=2&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300', alt: 'background-image', className: 'bgImage' })
 	      ),
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'bgImage' },
+	        { className: 'navContainer faderTwo' },
 	        _react2.default.createElement(
-	          'h3',
-	          null,
-	          'Testin this mug'
-	        )
-	      ),
-	      this.state.HF,
-	      _react2.default.createElement(
-	        'h1',
-	        { style: _style.temp },
-	        'hello'
+	          'p',
+	          { className: 'pTag' },
+	          'F'
+	        ),
+	        _react2.default.createElement(
+	          'ul',
+	          { className: 'menu' },
+	          _react2.default.createElement(
+	            'li',
+	            { style: _style.tabHolder, href: '#' },
+	            'HOME'
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { style: _style.tabHolder, href: '#' },
+	            'STACK'
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { style: _style.tabHolder, href: '#' },
+	            'SERVICES'
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { style: _style.tabHolder, href: '#' },
+	            'RESUME'
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { style: _style.tabHolder, href: '#' },
+	            'ABOUT'
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { style: _style.tabHolder, href: '#' },
+	            'CONTACT'
+	          )
+	        ),
+	        this.state.HF
 	      )
 	    );
 	  }
@@ -25449,6 +25449,32 @@
 	};
 
 	module.exports = HorizontalFab;
+
+/***/ },
+/* 223 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Test = function Test(props) {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'testDiv' },
+	    _react2.default.createElement(
+	      'h1',
+	      null,
+	      'Hello'
+	    )
+	  );
+	};
+
+	module.exports = Test;
 
 /***/ }
 /******/ ]);
