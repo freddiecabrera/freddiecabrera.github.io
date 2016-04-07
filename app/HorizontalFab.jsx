@@ -1,7 +1,7 @@
 import React from 'react'
 
 const HorizontalFab = props => (
-  <div className="fixed-action-btn vertical" style={{bottom: '45px', right: '24px'}}>
+  <div className="fixed-action-btn vertical faderTwo" style={{bottom: '45px', right: '24px'}}>
     <a className="btn-floating btn-large indigo accent-4">
       <i className="large material-icons">more_vert</i>
     </a>

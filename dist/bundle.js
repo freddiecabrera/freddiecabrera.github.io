@@ -25274,7 +25274,7 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      { className: 'navContainer' },
+	      { className: 'navContainer faderTwo' },
 	      _react2.default.createElement(
 	        'p',
 	        { className: 'pTag' },
@@ -25340,7 +25340,7 @@
 	var HorizontalFab = function HorizontalFab(props) {
 	  return _react2.default.createElement(
 	    'div',
-	    { className: 'fixed-action-btn vertical', style: { bottom: '45px', right: '24px' } },
+	    { className: 'fixed-action-btn vertical faderTwo', style: { bottom: '45px', right: '24px' } },
 	    _react2.default.createElement(
 	      'a',
 	      { className: 'btn-floating btn-large indigo accent-4' },

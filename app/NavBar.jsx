@@ -26,7 +26,7 @@ const NavBar = React.createClass({
   },
   render () {
     return (
-      <div className='navContainer'>
+      <div className='navContainer faderTwo'>
       <p className='pTag'>F</p>
         <ul className='menu'>
         <li style={tabHolder} href="#">HOME</li>
