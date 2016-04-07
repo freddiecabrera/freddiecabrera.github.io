@@ -1,15 +1,17 @@
 import React from 'react'
 
 const HorizontalFab = props => (
-  <div className="fixed-action-btn horizontal" style={{bottom: '45px', right: '24px'}}>
-    <a className="btn-floating btn-large red">
-      <i className="large material-icons">mode_edit</i>
+  <div className="fixed-action-btn vertical" style={{bottom: '45px', right: '24px'}}>
+    <a className="btn-floating btn-large indigo accent-4">
+      <i className="large material-icons">more_vert</i>
     </a>
     <ul>
-      <li><a className="btn-floating red"><i className="material-icons">insert_chart</i></a></li>
-      <li><a className="btn-floating yellow darken-1"><i className="material-icons">format_quote</i></a></li>
-      <li><a className="btn-floating green"><i className="material-icons">publish</i></a></li>
-      <li><a className="btn-floating blue"><i className="material-icons">attach_file</i></a></li>
+      <li><a className="btn-floating waves-effect waves-light indigo accent-4 "><i className="material-icons">home</i></a></li>
+      <li><a className="btn-floating waves-effect waves-light indigo accent-4 "><i className="material-icons">code</i></a></li>
+      <li><a className="btn-floating waves-effect waves-light indigo accent-4 "><i className="material-icons">work</i></a></li>
+      <li><a className="btn-floating waves-effect waves-light indigo accent-4 "><i className="material-icons">description</i></a></li>
+      <li><a className="btn-floating waves-effect waves-light indigo accent-4 "><i className="material-icons">accessibility</i></a></li>
+      <li><a className="btn-floating waves-effect waves-light indigo accent-4 "><i className="material-icons">email</i></a></li>
     </ul>
   </div>
 )

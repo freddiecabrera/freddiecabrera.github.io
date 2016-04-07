@@ -25248,8 +25248,6 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var hello;
-
 	var NavBar = _react2.default.createClass({
 	  displayName: 'NavBar',
 
@@ -25274,7 +25272,6 @@
 	    }.bind(this);
 	  },
 	  render: function render() {
-	    var hi = hello;
 	    return _react2.default.createElement(
 	      'div',
 	      { className: 'navContainer' },
@@ -25343,14 +25340,14 @@
 	var HorizontalFab = function HorizontalFab(props) {
 	  return _react2.default.createElement(
 	    'div',
-	    { className: 'fixed-action-btn horizontal', style: { bottom: '45px', right: '24px' } },
+	    { className: 'fixed-action-btn vertical', style: { bottom: '45px', right: '24px' } },
 	    _react2.default.createElement(
 	      'a',
-	      { className: 'btn-floating btn-large red' },
+	      { className: 'btn-floating btn-large indigo accent-4' },
 	      _react2.default.createElement(
 	        'i',
 	        { className: 'large material-icons' },
-	        'mode_edit'
+	        'more_vert'
 	      )
 	    ),
 	    _react2.default.createElement(
@@ -25361,11 +25358,11 @@
 	        null,
 	        _react2.default.createElement(
 	          'a',
-	          { className: 'btn-floating red' },
+	          { className: 'btn-floating waves-effect waves-light indigo accent-4 ' },
 	          _react2.default.createElement(
 	            'i',
 	            { className: 'material-icons' },
-	            'insert_chart'
+	            'home'
 	          )
 	        )
 	      ),
@@ -25374,11 +25371,11 @@
 	        null,
 	        _react2.default.createElement(
 	          'a',
-	          { className: 'btn-floating yellow darken-1' },
+	          { className: 'btn-floating waves-effect waves-light indigo accent-4 ' },
 	          _react2.default.createElement(
 	            'i',
 	            { className: 'material-icons' },
-	            'format_quote'
+	            'code'
 	          )
 	        )
 	      ),
@@ -25387,11 +25384,11 @@
 	        null,
 	        _react2.default.createElement(
 	          'a',
-	          { className: 'btn-floating green' },
+	          { className: 'btn-floating waves-effect waves-light indigo accent-4 ' },
 	          _react2.default.createElement(
 	            'i',
 	            { className: 'material-icons' },
-	            'publish'
+	            'work'
 	          )
 	        )
 	      ),
@@ -25400,11 +25397,37 @@
 	        null,
 	        _react2.default.createElement(
 	          'a',
-	          { className: 'btn-floating blue' },
+	          { className: 'btn-floating waves-effect waves-light indigo accent-4 ' },
 	          _react2.default.createElement(
 	            'i',
 	            { className: 'material-icons' },
-	            'attach_file'
+	            'description'
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'li',
+	        null,
+	        _react2.default.createElement(
+	          'a',
+	          { className: 'btn-floating waves-effect waves-light indigo accent-4 ' },
+	          _react2.default.createElement(
+	            'i',
+	            { className: 'material-icons' },
+	            'accessibility'
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'li',
+	        null,
+	        _react2.default.createElement(
+	          'a',
+	          { className: 'btn-floating waves-effect waves-light indigo accent-4 ' },
+	          _react2.default.createElement(
+	            'i',
+	            { className: 'material-icons' },
+	            'email'
 	          )
 	        )
 	      )

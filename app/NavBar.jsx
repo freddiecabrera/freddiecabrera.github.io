@@ -2,7 +2,6 @@ import React from 'react'
 import { tabHolder, temp } from '../styles/style'
 import HorizontalFab from './HorizontalFab'
 
-var hello;
 
 const NavBar = React.createClass({
   getInitialState: function() {
@@ -26,7 +25,6 @@ const NavBar = React.createClass({
     }.bind(this)
   },
   render () {
-    var hi = hello;
     return (
       <div className='navContainer'>
       <p className='pTag'>F</p>
