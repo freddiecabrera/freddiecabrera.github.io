@@ -5,7 +5,6 @@ import Test from './Test'
 const Home = props => (
   <div>
     <NavBar />
-    <Test />
   </div>
 )
 

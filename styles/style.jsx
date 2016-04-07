@@ -39,6 +39,20 @@ const styles = {
   },
   temp: {
     margin: '121.1rem 0 1.68rem 0'
+  },
+  mouseIcon: {
+    width: '30px', height: '30px', marginLeft: '50%', marginTop: '20px', cursor: 'pointer'
+  },
+  navHeader: {
+    marginTop: '180px',
+    textAlign: 'center',
+    fontWeight: '700',
+    fontStyle: 'bold',
+    color: 'white',
+    fontSize: '65px'
+  },
+  navHeaderP: {
+    color: 'white', textAlign: 'center'
   }
 }
 

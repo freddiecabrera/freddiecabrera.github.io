@@ -25203,6 +25203,20 @@
 	  },
 	  temp: {
 	    margin: '121.1rem 0 1.68rem 0'
+	  },
+	  mouseIcon: {
+	    width: '30px', height: '30px', marginLeft: '50%', marginTop: '20px', cursor: 'pointer'
+	  },
+	  navHeader: {
+	    marginTop: '180px',
+	    textAlign: 'center',
+	    fontWeight: '700',
+	    fontStyle: 'bold',
+	    color: 'white',
+	    fontSize: '65px'
+	  },
+	  navHeaderP: {
+	    color: 'white', textAlign: 'center'
 	  }
 	};
 
@@ -25232,8 +25246,7 @@
 	  return _react2.default.createElement(
 	    'div',
 	    null,
-	    _react2.default.createElement(_NavBar2.default, null),
-	    _react2.default.createElement(_Test2.default, null)
+	    _react2.default.createElement(_NavBar2.default, null)
 	  );
 	};
 
@@ -25331,6 +25344,17 @@
 	            'CONTACT'
 	          )
 	        ),
+	        _react2.default.createElement(
+	          'h4',
+	          { style: _style.navHeader },
+	          'WELCOME'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          { style: _style.navHeaderP },
+	          'I hope you enjoy your experiance, scroll down to get to know me.'
+	        ),
+	        _react2.default.createElement('img', { src: 'http://imgh.us/mouse.svg', style: _style.mouseIcon }),
 	        this.state.HF
 	      )
 	    );
@@ -25463,15 +25487,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var Test = function Test(props) {
-	  return _react2.default.createElement(
-	    'div',
-	    { className: 'testDiv' },
-	    _react2.default.createElement(
-	      'h1',
-	      null,
-	      'Hello'
-	    )
-	  );
+	  return _react2.default.createElement('div', { className: 'testDiv' });
 	};
 
 	module.exports = Test;
