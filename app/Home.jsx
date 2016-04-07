@@ -1,8 +1,9 @@
 import React from 'react'
+import NavBar from './NavBar'
 
 const Home = props => (
   <div>
-    <h1>Hello</h1>
+    <NavBar />
   </div>
 )
 

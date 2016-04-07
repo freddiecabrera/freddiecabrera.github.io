@@ -28,6 +28,16 @@ const styles = {
   socIcons: {
     height: '40px',
     margin: '5px'
+  },
+  tabHolder: {
+    margin: '10px',
+    cursor: 'pointer',
+    color: '#2962ff',
+    fontSize: '13px',
+    fontWeight: '300'
+  },
+  temp: {
+    margin: '121.1rem 0 1.68rem 0'
   }
 }
 

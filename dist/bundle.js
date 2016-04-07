@@ -19824,6 +19824,16 @@
 	  socIcons: {
 	    height: '40px',
 	    margin: '5px'
+	  },
+	  tabHolder: {
+	    margin: '10px',
+	    cursor: 'pointer',
+	    color: '#2962ff',
+	    fontSize: '13px',
+	    fontWeight: '300'
+	  },
+	  temp: {
+	    margin: '121.1rem 0 1.68rem 0'
 	  }
 	};
 
@@ -25204,21 +25214,205 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _NavBar = __webpack_require__(222);
+
+	var _NavBar2 = _interopRequireDefault(_NavBar);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var Home = function Home(props) {
 	  return _react2.default.createElement(
 	    'div',
 	    null,
-	    _react2.default.createElement(
-	      'h1',
-	      null,
-	      'Hello'
-	    )
+	    _react2.default.createElement(_NavBar2.default, null)
 	  );
 	};
 
 	module.exports = Home;
+
+/***/ },
+/* 222 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _style = __webpack_require__(160);
+
+	var _HorizontalFab = __webpack_require__(223);
+
+	var _HorizontalFab2 = _interopRequireDefault(_HorizontalFab);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var hello;
+
+	var NavBar = _react2.default.createClass({
+	  displayName: 'NavBar',
+
+	  getInitialState: function getInitialState() {
+	    return { HF: '' };
+	  },
+	  componentDidMount: function componentDidMount() {
+	    var lastScrollPosition = 0;
+	    window.onscroll = function () {
+	      var newScrollPosition = window.scrollY;
+	      console.log(newScrollPosition);
+	      if (newScrollPosition <= 85) {
+	        this.setState({
+	          HF: null
+	        });
+	      } else {
+	        this.setState({
+	          HF: _react2.default.createElement(_HorizontalFab2.default, null)
+	        });
+	      }
+	      lastScrollPosition = newScrollPosition;
+	    }.bind(this);
+	  },
+	  render: function render() {
+	    var hi = hello;
+	    return _react2.default.createElement(
+	      'div',
+	      { className: 'navContainer' },
+	      _react2.default.createElement(
+	        'p',
+	        { className: 'pTag' },
+	        'F'
+	      ),
+	      _react2.default.createElement(
+	        'ul',
+	        { className: 'menu' },
+	        _react2.default.createElement(
+	          'li',
+	          { style: _style.tabHolder, href: '#' },
+	          'HOME'
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          { style: _style.tabHolder, href: '#' },
+	          'STACK'
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          { style: _style.tabHolder, href: '#' },
+	          'SERVICES'
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          { style: _style.tabHolder, href: '#' },
+	          'RESUME'
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          { style: _style.tabHolder, href: '#' },
+	          'ABOUT'
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          { style: _style.tabHolder, href: '#' },
+	          'CONTACT'
+	        )
+	      ),
+	      this.state.HF,
+	      _react2.default.createElement(
+	        'h1',
+	        { style: _style.temp },
+	        'hello'
+	      )
+	    );
+	  }
+	});
+	module.exports = NavBar;
+
+/***/ },
+/* 223 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var HorizontalFab = function HorizontalFab(props) {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'fixed-action-btn horizontal', style: { bottom: '45px', right: '24px' } },
+	    _react2.default.createElement(
+	      'a',
+	      { className: 'btn-floating btn-large red' },
+	      _react2.default.createElement(
+	        'i',
+	        { className: 'large material-icons' },
+	        'mode_edit'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'ul',
+	      null,
+	      _react2.default.createElement(
+	        'li',
+	        null,
+	        _react2.default.createElement(
+	          'a',
+	          { className: 'btn-floating red' },
+	          _react2.default.createElement(
+	            'i',
+	            { className: 'material-icons' },
+	            'insert_chart'
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'li',
+	        null,
+	        _react2.default.createElement(
+	          'a',
+	          { className: 'btn-floating yellow darken-1' },
+	          _react2.default.createElement(
+	            'i',
+	            { className: 'material-icons' },
+	            'format_quote'
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'li',
+	        null,
+	        _react2.default.createElement(
+	          'a',
+	          { className: 'btn-floating green' },
+	          _react2.default.createElement(
+	            'i',
+	            { className: 'material-icons' },
+	            'publish'
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'li',
+	        null,
+	        _react2.default.createElement(
+	          'a',
+	          { className: 'btn-floating blue' },
+	          _react2.default.createElement(
+	            'i',
+	            { className: 'material-icons' },
+	            'attach_file'
+	          )
+	        )
+	      )
+	    )
+	  );
+	};
+
+	module.exports = HorizontalFab;
 
 /***/ }
 /******/ ]);
