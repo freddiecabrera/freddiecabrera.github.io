@@ -12,7 +12,7 @@ const NavBar = React.createClass({
     window.onscroll = function() {
       let newScrollPosition = window.scrollY
       console.log(newScrollPosition);
-      if (newScrollPosition <= 100){
+      if (newScrollPosition <= 71){
         this.setState({
           HF: null
         })
