@@ -19758,7 +19758,7 @@
 	      _react2.default.createElement(
 	        'h4',
 	        { style: _style.spHeader },
-	        'HELLO I\'M FREDDIE'
+	        'HELLO, I\'M FREDDIE'
 	      ),
 	      _react2.default.createElement(
 	        'p',
@@ -19766,12 +19766,20 @@
 	        'Full Stack Web Developer'
 	      ),
 	      _react2.default.createElement(
-	        'a',
-	        { className: 'btn-floating btn-large waves-effect waves-light indigo accent-4 animated infinite pulse' },
+	        _reactRouter.Link,
+	        { to: '/home' },
 	        _react2.default.createElement(
-	          'i',
-	          { className: 'material-icons' },
-	          'play_arrow'
+	          'div',
+	          null,
+	          _react2.default.createElement(
+	            'button',
+	            { className: 'btn-floating btn-large waves-effect waves-light indigo accent-4 animated infinite pulse' },
+	            _react2.default.createElement(
+	              'i',
+	              { className: 'material-icons' },
+	              'play_arrow'
+	            )
+	          )
 	        )
 	      )
 	    )
@@ -25138,6 +25146,10 @@
 
 	var _SplashPage2 = _interopRequireDefault(_SplashPage);
 
+	var _Home = __webpack_require__(221);
+
+	var _Home2 = _interopRequireDefault(_Home);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var routes = _react2.default.createElement(
@@ -25146,7 +25158,8 @@
 	  _react2.default.createElement(
 	    _reactRouter.Route,
 	    { path: '/', component: _Main2.default },
-	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _SplashPage2.default })
+	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _SplashPage2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/home', component: _Home2.default })
 	  )
 	);
 
@@ -25180,6 +25193,32 @@
 	};
 
 	module.exports = Main;
+
+/***/ },
+/* 221 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Home = function Home(props) {
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement(
+	      'h1',
+	      null,
+	      'Hello'
+	    )
+	  );
+	};
+
+	module.exports = Home;
 
 /***/ }
 /******/ ]);

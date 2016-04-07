@@ -11,4 +11,4 @@ Main.PropTypes = {
   children: element.isRequired
 }
 
-module.exports = Main 
+module.exports = Main
