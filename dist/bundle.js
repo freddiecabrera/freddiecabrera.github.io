@@ -19736,50 +19736,47 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var SplashPage = _react2.default.createClass({
-	  displayName: 'SplashPage',
-	  render: function render() {
-	    return _react2.default.createElement(
+	var SplashPage = function SplashPage(props) {
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement(
+	      'video',
+	      { id: 'BackgroundVideo', muted: true, loop: true, autoPlay: true },
+	      _react2.default.createElement('source', {
+	        src: 'http://bit.ly/1UHLoUb'
+	      })
+	    ),
+	    _react2.default.createElement(
+	      'a',
+	      { className: 'fader', style: _style.verticalText, href: 'mailto:freddie.cabrera@scndhalf.com' },
+	      'freddie.cabrera@scndhalf.com'
+	    ),
+	    _react2.default.createElement(
 	      'div',
-	      null,
+	      { className: 'fader', style: _style.spTextContainer },
 	      _react2.default.createElement(
-	        'video',
-	        { id: 'BackgroundVideo', muted: true, loop: true, autoPlay: true },
-	        _react2.default.createElement('source', {
-	          src: 'http://bit.ly/1UHLoUb'
-	        })
+	        'h4',
+	        { style: _style.spHeader },
+	        'HELLO I\'M FREDDIE'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        'Full Stack Web Developer'
 	      ),
 	      _react2.default.createElement(
 	        'a',
-	        { className: 'fader', style: _style.verticalText, href: 'mailto:freddie.cabrera@scndhalf.com' },
-	        'freddie.cabrera@scndhalf.com'
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'fader', style: _style.spTextContainer },
+	        { className: 'btn-floating btn-large waves-effect waves-light indigo accent-4 animated infinite pulse' },
 	        _react2.default.createElement(
-	          'h4',
-	          { style: _style.spHeader },
-	          'HELLO I\'M FREDDIE'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          'Full Stack Web Developer'
-	        ),
-	        _react2.default.createElement(
-	          'a',
-	          { className: 'btn-floating btn-large waves-effect waves-light indigo accent-4 animated infinite pulse' },
-	          _react2.default.createElement(
-	            'i',
-	            { className: 'material-icons' },
-	            'play_arrow'
-	          )
+	          'i',
+	          { className: 'material-icons' },
+	          'play_arrow'
 	        )
 	      )
-	    );
-	  }
-	});
+	    )
+	  );
+	};
 
 	module.exports = SplashPage;
 

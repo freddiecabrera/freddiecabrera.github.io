@@ -1,9 +1,7 @@
 import React from 'react'
 import { spHeader, verticalText, spTextContainer, socIcons } from '../styles/style'
 import { Link } from 'react-router'
-const SplashPage = React.createClass({
-  render () {
-    return (
+const SplashPage = props => (
       <div>
         <video id='BackgroundVideo' muted loop autoPlay>
           <source
@@ -17,8 +15,6 @@ const SplashPage = React.createClass({
           <a className="btn-floating btn-large waves-effect waves-light indigo accent-4 animated infinite pulse"><i className="material-icons">play_arrow</i></a>
         </div>
       </div>
-    )
-  }
-})
+)
 
 module.exports = SplashPage
