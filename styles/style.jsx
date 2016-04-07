@@ -33,7 +33,7 @@ const styles = {
     margin: '10px',
     cursor: 'pointer',
     color: '#2962ff',
-    fontSize: '13px',
+    fontSize: '18px',
     fontWeight: '300'
   },
   temp: {

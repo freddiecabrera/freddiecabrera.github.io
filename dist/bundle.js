@@ -19829,7 +19829,7 @@
 	    margin: '10px',
 	    cursor: 'pointer',
 	    color: '#2962ff',
-	    fontSize: '13px',
+	    fontSize: '18px',
 	    fontWeight: '300'
 	  },
 	  temp: {
@@ -25261,7 +25261,7 @@
 	    window.onscroll = function () {
 	      var newScrollPosition = window.scrollY;
 	      console.log(newScrollPosition);
-	      if (newScrollPosition <= 85) {
+	      if (newScrollPosition <= 100) {
 	        this.setState({
 	          HF: null
 	        });
