@@ -25105,11 +25105,15 @@
 	    'div',
 	    null,
 	    _react2.default.createElement(
-	      'video',
-	      { id: 'BackgroundVideo', muted: true, loop: true, autoPlay: true },
-	      _react2.default.createElement('source', {
-	        src: 'http://bit.ly/1UHLoUb'
-	      })
+	      'div',
+	      { className: 'fullscreen-bg' },
+	      _react2.default.createElement(
+	        'video',
+	        { className: 'fullscreen-bg__video', muted: true, loop: true, autoPlay: true },
+	        _react2.default.createElement('source', {
+	          src: 'http://bit.ly/1UHLoUb'
+	        })
+	      )
 	    ),
 	    _react2.default.createElement(
 	      'a',

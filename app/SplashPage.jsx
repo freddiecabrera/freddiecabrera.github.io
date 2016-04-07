@@ -3,13 +3,15 @@ import { spHeader, verticalText, spTextContainer, socIcons } from '../styles/sty
 import { Link } from 'react-router'
 const SplashPage = props => (
   <div>
-    <video id='BackgroundVideo' muted loop autoPlay>
+    <div className='fullscreen-bg'>
+    <video className='fullscreen-bg__video' muted loop autoPlay>
       <source
         src='http://bit.ly/1UHLoUb'
       />
     </video>
-      <a className='fader' style={verticalText} href="mailto:freddie.cabrera@scndhalf.com">freddie.cabrera@scndhalf.com</a>
-      <div className="fader" style={spTextContainer}>
+    </div>
+    <a className='fader' style={verticalText} href="mailto:freddie.cabrera@scndhalf.com">freddie.cabrera@scndhalf.com</a>
+    <div className="fader" style={spTextContainer}>
       <h4 style={spHeader}>HELLO, I'M FREDDIE</h4>
       <p>Full Stack Web Developer</p>
       <Link to='/home'>
