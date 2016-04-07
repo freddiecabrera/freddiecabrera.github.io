@@ -36,6 +36,9 @@ const NavBar = React.createClass({
         <li style={tabHolder} href="#">ABOUT</li>
         <li style={tabHolder} href="#">CONTACT</li>
         </ul>
+        <div className='bgImage'>
+          <h3>Testin this mug</h3>
+        </div>
         {this.state.HF}
         <h1 style={temp}>hello</h1>
       </div>

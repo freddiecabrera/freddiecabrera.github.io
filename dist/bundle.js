@@ -25198,7 +25198,8 @@
 	    cursor: 'pointer',
 	    color: '#2962ff',
 	    fontSize: '15px',
-	    fontWeight: '300'
+	    fontWeight: '300',
+	    display: 'inline'
 	  },
 	  temp: {
 	    margin: '121.1rem 0 1.68rem 0'
@@ -25317,6 +25318,15 @@
 	          'CONTACT'
 	        )
 	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'bgImage' },
+	        _react2.default.createElement(
+	          'h3',
+	          null,
+	          'Testin this mug'
+	        )
+	      ),
 	      this.state.HF,
 	      _react2.default.createElement(
 	        'h1',
@@ -25343,7 +25353,7 @@
 	var HorizontalFab = function HorizontalFab(props) {
 	  return _react2.default.createElement(
 	    'div',
-	    { className: 'fixed-action-btn vertical faderTwo', style: { bottom: '45px', right: '24px' } },
+	    { className: 'fixed-action-btn vertical faderThree', style: { bottom: '45px', right: '24px' } },
 	    _react2.default.createElement(
 	      'a',
 	      { className: 'btn-floating btn-large indigo accent-4' },

@@ -34,7 +34,8 @@ const styles = {
     cursor: 'pointer',
     color: '#2962ff',
     fontSize: '15px',
-    fontWeight: '300'
+    fontWeight: '300',
+    display: 'inline'
   },
   temp: {
     margin: '121.1rem 0 1.68rem 0'
