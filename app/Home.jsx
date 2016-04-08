@@ -1,10 +1,11 @@
 import React from 'react'
 import NavBar from './NavBar'
-import Test from './Test'
+import WebStack from './WebStack'
 
 const Home = props => (
   <div>
     <NavBar />
+      <WebStack />
   </div>
 )
 

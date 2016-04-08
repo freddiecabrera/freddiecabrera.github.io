@@ -46,13 +46,24 @@ const styles = {
   navHeader: {
     marginTop: '180px',
     textAlign: 'center',
-    fontWeight: '700',
-    fontStyle: 'bold',
+    fontWeight: '300',
+    fontStyle: 'thin',
     color: 'white',
     fontSize: '65px'
   },
   navHeaderP: {
     color: 'white', textAlign: 'center'
+  },
+  mongoDB: { width: '260px', marginRight: '20px '},
+  expressJS: { width: '200px', marginRight: '20px '},
+  reactJS: { width: '90px', marginBottom: '-14px' },
+  nodeJS: { marginBottom: '-70px', width: '200px' },
+  webStackMargin: {
+    textAlign: 'center',
+    marginTop: '20%',
+    backgroundColor: 'white',
+    width: '100%',
+    height: '740px'
   }
 }
 

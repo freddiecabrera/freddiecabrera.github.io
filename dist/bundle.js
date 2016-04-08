@@ -25210,13 +25210,24 @@
 	  navHeader: {
 	    marginTop: '180px',
 	    textAlign: 'center',
-	    fontWeight: '700',
-	    fontStyle: 'bold',
+	    fontWeight: '300',
+	    fontStyle: 'thin',
 	    color: 'white',
 	    fontSize: '65px'
 	  },
 	  navHeaderP: {
 	    color: 'white', textAlign: 'center'
+	  },
+	  mongoDB: { width: '260px', marginRight: '20px ' },
+	  expressJS: { width: '200px', marginRight: '20px ' },
+	  reactJS: { width: '90px', marginBottom: '-14px' },
+	  nodeJS: { marginBottom: '-70px', width: '200px' },
+	  webStackMargin: {
+	    textAlign: 'center',
+	    marginTop: '20%',
+	    backgroundColor: 'white',
+	    width: '100%',
+	    height: '740px'
 	  }
 	};
 
@@ -25236,9 +25247,9 @@
 
 	var _NavBar2 = _interopRequireDefault(_NavBar);
 
-	var _Test = __webpack_require__(223);
+	var _WebStack = __webpack_require__(224);
 
-	var _Test2 = _interopRequireDefault(_Test);
+	var _WebStack2 = _interopRequireDefault(_WebStack);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -25246,7 +25257,8 @@
 	  return _react2.default.createElement(
 	    'div',
 	    null,
-	    _react2.default.createElement(_NavBar2.default, null)
+	    _react2.default.createElement(_NavBar2.default, null),
+	    _react2.default.createElement(_WebStack2.default, null)
 	  );
 	};
 
@@ -25475,7 +25487,8 @@
 	module.exports = HorizontalFab;
 
 /***/ },
-/* 223 */
+/* 223 */,
+/* 224 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25484,13 +25497,189 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _style = __webpack_require__(219);
+
+	var _ReactLogo = __webpack_require__(226);
+
+	var _ReactLogo2 = _interopRequireDefault(_ReactLogo);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var Test = function Test(props) {
-	  return _react2.default.createElement('div', { className: 'testDiv' });
+	var WebStack = function WebStack(props) {
+	  return _react2.default.createElement(
+	    'div',
+	    { style: _style.webStackMargin, className: 'container' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'stackContainer' },
+	      _react2.default.createElement(
+	        'i',
+	        { className: 'material-icons', style: { color: '#2962ff', fontSize: '120px' } },
+	        'code'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        { style: { color: '#777777', fontSize: '12px' } },
+	        'This is the current stack that I like to work with. I also have some experiance with Angular 1.5x'
+	      )
+	    ),
+	    _react2.default.createElement('img', { style: _style.mongoDB, src: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/45/MongoDB-Logo.svg/1054px-MongoDB-Logo.svg.png' }),
+	    _react2.default.createElement('img', { style: _style.expressJS, src: 'http://amt.in/img/services/express.png' }),
+	    _react2.default.createElement('img', { style: _style.reactJS, src: 'https://react-materialize.github.io/assets/react-materialize-logo.svg' }),
+	    _react2.default.createElement('img', { style: _style.nodeJS, src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png' })
+	  );
 	};
 
-	module.exports = Test;
+	module.exports = WebStack;
+
+/***/ },
+/* 225 */,
+/* 226 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(global) {'use strict';
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var data = {
+	  path1: {
+	    d: 'M231.7,200c0,17.4-1.7,88-31.7,88s-31.7-70.6-31.7-88s1.7-88,31.7-88S231.7,182.6,231.7,200z'
+	  },
+	  path2: {
+	    d: 'M216.1,227.7c-15,8.9-76.6,43.4-91.9,17.6s44.6-63.2,59.6-72.1s76.6-43.4,91.9-17.6S231.1,218.8,216.1,227.7z'
+	  },
+	  path3: {
+	    d: 'M183.9,227.7c15,8.9,76.6,43.4,91.9,17.6s-44.6-63.2-59.6-72.1s-76.6-43.4-91.9-17.6S168.9,218.8,183.9,227.7z'
+	  }
+	};
+
+	var requestAnimationFrame = global.requestAnimationFrame || global.webkitRequestAnimationFrame || global.mozRequestAnimationFrame || function (callback) {
+	  global.setTimeout(callback, 1000 / 60);
+	};
+
+	var animate = function animate(handle) {
+	  handle();
+	  requestAnimationFrame(function () {
+	    animate(handle);
+	  });
+	};
+
+	var ReactLogo = function (_React$Component) {
+	  _inherits(ReactLogo, _React$Component);
+
+	  function ReactLogo(props) {
+	    _classCallCheck(this, ReactLogo);
+
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ReactLogo).call(this, props));
+
+	    _this.state = {
+	      length: 0
+	    };
+	    return _this;
+	  }
+
+	  _createClass(ReactLogo, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      var _this2 = this;
+
+	      if (this.props.animation) {
+	        animate(function () {
+	          _this2.tweenLoop();
+	        });
+	      }
+
+	      Object.keys(data).map(function (ref) {
+	        _this2[ref] = _react2.default.findDOMNode(_this2.refs[ref]);
+	      });
+	    }
+	  }, {
+	    key: 'getPathTotalLength',
+	    value: function getPathTotalLength() {
+	      return this.pathTotalLength || _react2.default.findDOMNode(this.refs.path1).getTotalLength();
+	    }
+	  }, {
+	    key: 'tweenLoop',
+	    value: function tweenLoop() {
+	      this.current = this.current || 0;
+	      this.pathTotalLength = this.getPathTotalLength();
+
+	      if (this.current >= this.pathTotalLength) {
+	        this.current = 0;
+	      }
+	      this.current += this.pathTotalLength / this.props.duration;
+	      this.setState({
+	        length: this.current
+	      });
+	    }
+	  }, {
+	    key: 'getTransforms',
+	    value: function getTransforms() {
+	      var _this3 = this;
+
+	      if (!this.refs.path1) {
+	        return [];
+	      }
+
+	      return Object.keys(data).map(function (ref) {
+	        var pos = _this3[ref].getPointAtLength(_this3.state.length);
+	        return 'translate(' + pos.x + 'px, ' + pos.y + 'px)';
+	      });
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var props = this.props;
+	      var transforms = this.getTransforms();
+
+	      return _react2.default.createElement(
+	        'div',
+	        { className: props.prefixClassName + '-svg' },
+	        _react2.default.createElement(
+	          'svg',
+	          { viewBox: '0 0 400 400' },
+	          _react2.default.createElement('path', { ref: 'path1', fill: props.pathFillColor, stroke: props.pathStrokeColor, strokeWidth: props.pathStrokeWidth, d: data['path1'].d }),
+	          _react2.default.createElement('path', { ref: 'path2', fill: props.pathFillColor, stroke: props.pathStrokeColor, strokeWidth: props.pathStrokeWidth, d: data['path2'].d }),
+	          _react2.default.createElement('path', { ref: 'path3', fill: props.pathFillColor, stroke: props.pathStrokeColor, strokeWidth: props.pathStrokeWidth, d: data['path3'].d }),
+	          _react2.default.createElement('circle', { fill: props.bigCircleFillColor, cx: '200', cy: '200', r: props.bigCircleRadius }),
+	          _react2.default.createElement('circle', { ref: 'circle1', fill: props.smallCircleFillColor, cx: '0', cy: '0', r: props.smallCircleRadius, style: { transform: transforms[0], WebkitTransform: transforms[0] } }),
+	          _react2.default.createElement('circle', { ref: 'circle2', fill: props.smallCircleFillColor, cx: '0', cy: '0', r: props.smallCircleRadius, style: { transform: transforms[1], WebkitTransform: transforms[1] } }),
+	          _react2.default.createElement('circle', { ref: 'circle3', fill: props.smallCircleFillColor, cx: '0', cy: '0', r: props.smallCircleRadius, style: { transform: transforms[2], WebkitTransform: transforms[2] } })
+	        )
+	      );
+	    }
+	  }]);
+
+	  return ReactLogo;
+	}(_react2.default.Component);
+
+	ReactLogo.defaultProps = {
+	  prefixClassName: 'react-logo',
+	  pathStrokeWidth: 4,
+	  pathFillColor: 'none',
+	  pathStrokeColor: '#61dafb',
+	  bigCircleFillColor: '#61dafb',
+	  smallCircleFillColor: '#8e4a3a',
+	  bigCircleRadius: 16,
+	  smallCircleRadius: 6,
+	  animation: true,
+	  duration: 200
+	};
+
+	module.exports = ReactLogo;
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ }
 /******/ ]);
