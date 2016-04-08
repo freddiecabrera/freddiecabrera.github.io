@@ -64,6 +64,12 @@ const styles = {
     backgroundColor: 'white',
     width: '100%',
     height: '740px'
+  },
+  footerBlock: {
+    marginTop: '-1%',
+    backgroundColor: 'black',
+    width: '100%',
+    height: '150px'
   }
 }
 
