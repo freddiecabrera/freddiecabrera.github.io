@@ -1,7 +1,7 @@
 const styles = {
   spHeader: {
-    fontWeight: '700',
-    fontStyle: 'bold',
+    fontWeight: '300',
+    fontStyle: 'thin',
     color: 'white',
     fontSize: '65px'
   },

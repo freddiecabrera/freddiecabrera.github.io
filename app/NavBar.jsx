@@ -1,10 +1,13 @@
 import React from 'react'
 import { tabHolder, temp, navHeader, mouseIcon, navHeaderP } from '../styles/style'
 import HorizontalFab from './HorizontalFab'
+import scrollTo from './ScrollTo'
 
 const NavBar = React.createClass({
-  getInitialState: function() {
-  return {HF: ''};
+  getInitialState () {
+  return ({
+    HF: ''
+  })
   },
   componentDidMount () {
     var  lastScrollPosition = 0
@@ -23,6 +26,9 @@ const NavBar = React.createClass({
       lastScrollPosition = newScrollPosition
     }.bind(this)
   },
+  scrollHere (location) {
+    scrollTo(location)
+  },
   render () {
     return (
       <div>
@@ -32,8 +38,7 @@ const NavBar = React.createClass({
         <div className='navContainer faderTwo'>
         <p className='pTag'>F</p>
         <ul className='menu'>
-          <li style={tabHolder} href="#">HOME</li>
-          <li style={tabHolder} href="#">STACK</li>
+          <li onClick={this.scrollHere.bind(this, 734)} style={tabHolder} href="#">STACK</li>
           <li style={tabHolder} href="#">SERVICES</li>
           <li style={tabHolder} href="#">RESUME</li>
           <li style={tabHolder} href="#">ABOUT</li>
@@ -41,7 +46,7 @@ const NavBar = React.createClass({
         </ul>
         <h4 style={navHeader}>WELCOME</h4>
         <p style={navHeaderP}>I hope you enjoy your experiance, scroll down to get to know me.</p>
-        <img src='http://imgh.us/mouse.svg' style={mouseIcon}/>
+        <img onClick={this.scrollHere.bind(this, 734)} src='http://imgh.us/mouse.svg' style={mouseIcon}/>
         {this.state.HF}
       </div>
     </div>

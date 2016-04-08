@@ -25164,8 +25164,8 @@
 
 	var styles = {
 	  spHeader: {
-	    fontWeight: '700',
-	    fontStyle: 'bold',
+	    fontWeight: '300',
+	    fontStyle: 'thin',
 	    color: 'white',
 	    fontSize: '65px'
 	  },
@@ -25291,13 +25291,18 @@
 
 	var _HorizontalFab2 = _interopRequireDefault(_HorizontalFab);
 
+	var _ScrollTo = __webpack_require__(228);
+
+	var _ScrollTo2 = _interopRequireDefault(_ScrollTo);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var NavBar = _react2.default.createClass({
 	  displayName: 'NavBar',
-
 	  getInitialState: function getInitialState() {
-	    return { HF: '' };
+	    return {
+	      HF: ''
+	    };
 	  },
 	  componentDidMount: function componentDidMount() {
 	    var lastScrollPosition = 0;
@@ -25315,6 +25320,9 @@
 	      }
 	      lastScrollPosition = newScrollPosition;
 	    }.bind(this);
+	  },
+	  scrollHere: function scrollHere(location) {
+	    (0, _ScrollTo2.default)(location);
 	  },
 	  render: function render() {
 	    return _react2.default.createElement(
@@ -25338,12 +25346,7 @@
 	          { className: 'menu' },
 	          _react2.default.createElement(
 	            'li',
-	            { style: _style.tabHolder, href: '#' },
-	            'HOME'
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            { style: _style.tabHolder, href: '#' },
+	            { onClick: this.scrollHere.bind(this, 734), style: _style.tabHolder, href: '#' },
 	            'STACK'
 	          ),
 	          _react2.default.createElement(
@@ -25377,7 +25380,7 @@
 	          { style: _style.navHeaderP },
 	          'I hope you enjoy your experiance, scroll down to get to know me.'
 	        ),
-	        _react2.default.createElement('img', { src: 'http://imgh.us/mouse.svg', style: _style.mouseIcon }),
+	        _react2.default.createElement('img', { onClick: this.scrollHere.bind(this, 734), src: 'http://imgh.us/mouse.svg', style: _style.mouseIcon }),
 	        this.state.HF
 	      )
 	    );
@@ -25395,105 +25398,118 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _ScrollTo = __webpack_require__(228);
+
+	var _ScrollTo2 = _interopRequireDefault(_ScrollTo);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var HorizontalFab = function HorizontalFab(props) {
-	  return _react2.default.createElement(
-	    'div',
-	    { className: 'fixed-action-btn vertical faderThree', style: { bottom: '45px', right: '24px' } },
-	    _react2.default.createElement(
-	      'a',
-	      { className: 'btn-floating btn-large indigo accent-4' },
+	var PropTypes = _react2.default.PropTypes;
+
+
+	var HorizontalFab = _react2.default.createClass({
+	  displayName: 'HorizontalFab',
+	  scrollHere: function scrollHere(destination) {
+	    (0, _ScrollTo2.default)(destination);
+	  },
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      { className: 'fixed-action-btn vertical faderThree', style: { bottom: '45px', right: '24px' } },
 	      _react2.default.createElement(
-	        'i',
-	        { className: 'large material-icons' },
-	        'more_vert'
+	        'a',
+	        { className: 'btn-floating btn-large indigo accent-4' },
+	        _react2.default.createElement(
+	          'i',
+	          { className: 'large material-icons' },
+	          'more_vert'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'ul',
+	        null,
+	        _react2.default.createElement(
+	          'li',
+	          { onClick: this.scrollHere.bind(this, 0) },
+	          _react2.default.createElement(
+	            'a',
+	            { className: 'btn-floating waves-effect waves-light indigo accent-4 ' },
+	            _react2.default.createElement(
+	              'i',
+	              { className: 'material-icons' },
+	              'home'
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          { oncClick: this.scrollHere.bind(this, 734) },
+	          _react2.default.createElement(
+	            'a',
+	            { className: 'btn-floating waves-effect waves-light indigo accent-4 ' },
+	            _react2.default.createElement(
+	              'i',
+	              { className: 'material-icons' },
+	              'code'
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          _react2.default.createElement(
+	            'a',
+	            { className: 'btn-floating waves-effect waves-light indigo accent-4 ' },
+	            _react2.default.createElement(
+	              'i',
+	              { className: 'material-icons' },
+	              'work'
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          _react2.default.createElement(
+	            'a',
+	            { className: 'btn-floating waves-effect waves-light indigo accent-4 ' },
+	            _react2.default.createElement(
+	              'i',
+	              { className: 'material-icons' },
+	              'description'
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          _react2.default.createElement(
+	            'a',
+	            { className: 'btn-floating waves-effect waves-light indigo accent-4 ' },
+	            _react2.default.createElement(
+	              'i',
+	              { className: 'material-icons' },
+	              'accessibility'
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          _react2.default.createElement(
+	            'a',
+	            { className: 'btn-floating waves-effect waves-light indigo accent-4 ' },
+	            _react2.default.createElement(
+	              'i',
+	              { className: 'material-icons' },
+	              'email'
+	            )
+	          )
+	        )
 	      )
-	    ),
-	    _react2.default.createElement(
-	      'ul',
-	      null,
-	      _react2.default.createElement(
-	        'li',
-	        null,
-	        _react2.default.createElement(
-	          'a',
-	          { className: 'btn-floating waves-effect waves-light indigo accent-4 ' },
-	          _react2.default.createElement(
-	            'i',
-	            { className: 'material-icons' },
-	            'home'
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'li',
-	        null,
-	        _react2.default.createElement(
-	          'a',
-	          { className: 'btn-floating waves-effect waves-light indigo accent-4 ' },
-	          _react2.default.createElement(
-	            'i',
-	            { className: 'material-icons' },
-	            'code'
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'li',
-	        null,
-	        _react2.default.createElement(
-	          'a',
-	          { className: 'btn-floating waves-effect waves-light indigo accent-4 ' },
-	          _react2.default.createElement(
-	            'i',
-	            { className: 'material-icons' },
-	            'work'
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'li',
-	        null,
-	        _react2.default.createElement(
-	          'a',
-	          { className: 'btn-floating waves-effect waves-light indigo accent-4 ' },
-	          _react2.default.createElement(
-	            'i',
-	            { className: 'material-icons' },
-	            'description'
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'li',
-	        null,
-	        _react2.default.createElement(
-	          'a',
-	          { className: 'btn-floating waves-effect waves-light indigo accent-4 ' },
-	          _react2.default.createElement(
-	            'i',
-	            { className: 'material-icons' },
-	            'accessibility'
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'li',
-	        null,
-	        _react2.default.createElement(
-	          'a',
-	          { className: 'btn-floating waves-effect waves-light indigo accent-4 ' },
-	          _react2.default.createElement(
-	            'i',
-	            { className: 'material-icons' },
-	            'email'
-	          )
-	        )
-	      )
-	    )
-	  );
-	};
+	    );
+	  }
+	});
 
 	module.exports = HorizontalFab;
 
@@ -25570,6 +25586,76 @@
 	};
 
 	module.exports = Footer;
+
+/***/ },
+/* 228 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Math.easeInOutQuad = function (t, b, c, d) {
+	  t /= d / 2;
+	  if (t < 1) {
+	    return c / 2 * t * t + b;
+	  }
+	  t--;
+	  return -c / 2 * (t * (t - 2) - 1) + b;
+	};
+
+	Math.easeInCubic = function (t, b, c, d) {
+	  var tc = (t /= d) * t * t;
+	  return b + c * tc;
+	};
+
+	Math.inOutQuintic = function (t, b, c, d) {
+	  var ts = (t /= d) * t,
+	      tc = ts * t;
+	  return b + c * (6 * tc * ts + -15 * ts * ts + 10 * tc);
+	};
+
+	// requestAnimationFrame for Smart Animating http://goo.gl/sx5sts
+	var requestAnimFrame = function () {
+	  return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || function (callback) {
+	    window.setTimeout(callback, 1000 / 60);
+	  };
+	}();
+
+	function scrollTo(to, callback, duration) {
+	  // because it's so fucking difficult to detect the scrolling element, just move them all
+	  function move(amount) {
+	    document.documentElement.scrollTop = amount;
+	    document.body.parentNode.scrollTop = amount;
+	    document.body.scrollTop = amount;
+	  }
+	  function position() {
+	    return document.documentElement.scrollTop || document.body.parentNode.scrollTop || document.body.scrollTop;
+	  }
+	  var start = position(),
+	      change = to - start,
+	      currentTime = 0,
+	      increment = 20;
+	  duration = typeof duration === 'undefined' ? 500 : duration;
+	  var animateScroll = function animateScroll() {
+	    // increment the time
+	    currentTime += increment;
+	    // find the value with the quadratic in-out easing function
+	    var val = Math.easeInOutQuad(currentTime, start, change, duration);
+	    // move the document.body
+	    move(val);
+	    // do the animation unless its over
+	    if (currentTime < duration) {
+	      requestAnimFrame(animateScroll);
+	    } else {
+	      if (callback && typeof callback === 'function') {
+	        // the animation is done so lets callback
+	        callback();
+	      }
+	    }
+	  };
+	  animateScroll();
+	}
+
+	module.exports = scrollTo;
 
 /***/ }
 /******/ ]);
