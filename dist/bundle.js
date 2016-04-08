@@ -25385,7 +25385,7 @@
 	          _react2.default.createElement(
 	            'li',
 	            { onClick: this.scrollHere.bind(this, 734), style: _style.tabHolder, href: '#' },
-	            'STCK'
+	            'STACK'
 	          ),
 	          _react2.default.createElement(
 	            'li',
