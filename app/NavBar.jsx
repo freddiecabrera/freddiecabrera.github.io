@@ -45,7 +45,7 @@ const NavBar = React.createClass({
           <li style={tabHolder} href="#">CONTACT</li>
         </ul>
         <h4 style={navHeader}>WELCOME</h4>
-        <p style={navHeaderP}>I hope you enjoy your experiance, scroll down to get to know me.</p>
+        <p style={navHeaderP}>I hope you enjoy your experiance, scroll down and get to know me.</p>
         <img onClick={this.scrollHere.bind(this, 734)} src='http://imgh.us/mouse.svg' style={mouseIcon}/>
         {this.state.HF}
       </div>

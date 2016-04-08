@@ -1,11 +1,12 @@
 import React from 'react'
-import { webStackMargin, mongoDB, expressJS, reactJS, nodeJS } from '../styles/style'
+import { webStackMargin, mongoDB, expressJS, reactJS, nodeJS, webStackIcon, webStackTitle, webStackPara } from '../styles/style'
 
 const WebStack = props => (
   <div style={ webStackMargin } className='container'>
     <div className='stackContainer faderTwo'>
-      <i className="material-icons" style={{color: '#2962ff', fontSize: '120px'}}>code</i>
-      <p style={{color: '#777777', fontSize: '12px'}}>This is the current stack that I like to work with. I also have some experiance with Angular 1.5x</p>
+      <i className="material-icons" style={webStackIcon}>code</i>
+      <p style={webStackTitle}>STACK</p>
+      <p style={webStackPara}>This is the current stack that I like to work with. I also have some experiance with Angular 1.5.X</p>
     </div>
     <img style={mongoDB} className='faderTwo' src='https://upload.wikimedia.org/wikipedia/en/thumb/4/45/MongoDB-Logo.svg/1054px-MongoDB-Logo.svg.png' />
     <img style={expressJS} className='faderTwo' src='http://amt.in/img/services/express.png' />

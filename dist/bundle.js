@@ -25234,7 +25234,10 @@
 	    backgroundColor: 'black',
 	    width: '100%',
 	    height: '150px'
-	  }
+	  },
+	  webStackIcon: { color: '#2962ff', fontSize: '120px' },
+	  webStackTitle: { color: 'black', fontSize: '12px' },
+	  webStackPara: { color: '#777777', fontSize: '12px' }
 	};
 
 	module.exports = styles;
@@ -25378,7 +25381,7 @@
 	        _react2.default.createElement(
 	          'p',
 	          { style: _style.navHeaderP },
-	          'I hope you enjoy your experiance, scroll down to get to know me.'
+	          'I hope you enjoy your experiance, scroll down and get to know me.'
 	        ),
 	        _react2.default.createElement('img', { onClick: this.scrollHere.bind(this, 734), src: 'http://imgh.us/mouse.svg', style: _style.mouseIcon }),
 	        this.state.HF
@@ -25537,13 +25540,18 @@
 	      { className: 'stackContainer faderTwo' },
 	      _react2.default.createElement(
 	        'i',
-	        { className: 'material-icons', style: { color: '#2962ff', fontSize: '120px' } },
+	        { className: 'material-icons', style: _style.webStackIcon },
 	        'code'
 	      ),
 	      _react2.default.createElement(
 	        'p',
-	        { style: { color: '#777777', fontSize: '12px' } },
-	        'This is the current stack that I like to work with. I also have some experiance with Angular 1.5x'
+	        { style: _style.webStackTitle },
+	        'STACK'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        { style: _style.webStackPara },
+	        'This is the current stack that I like to work with. I also have some experiance with Angular 1.5.X'
 	      )
 	    ),
 	    _react2.default.createElement('img', { style: _style.mongoDB, className: 'faderTwo', src: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/45/MongoDB-Logo.svg/1054px-MongoDB-Logo.svg.png' }),

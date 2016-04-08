@@ -70,7 +70,10 @@ const styles = {
     backgroundColor: 'black',
     width: '100%',
     height: '150px'
-  }
+  },
+  webStackIcon: {color: '#2962ff', fontSize: '120px'},
+  webStackTitle: {color: 'black', fontSize: '12px'},
+  webStackPara: {color: '#777777', fontSize: '12px'}
 }
 
 module.exports = styles
