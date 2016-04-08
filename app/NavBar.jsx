@@ -38,8 +38,8 @@ const NavBar = React.createClass({
         <div className='navContainer faderTwo'>
         <p className='pTag'>F</p>
         <ul className='menu'>
-          <li onClick={this.scrollHere.bind(this, 734)} style={tabHolder} href="#">STACK</li>
-          <li style={tabHolder} href="#">SERVICES</li>
+          <li onClick={this.scrollHere.bind(this, 734)} style={tabHolder} href="#">STCK</li>
+          <li onClick={this.scrollHere.bind(this, 1471)} style={tabHolder} href="#">SERVICES</li>
           <li style={tabHolder} href="#">RESUME</li>
           <li style={tabHolder} href="#">ABOUT</li>
           <li style={tabHolder} href="#">CONTACT</li>

@@ -25237,7 +25237,37 @@
 	  },
 	  webStackIcon: { color: '#2962ff', fontSize: '120px' },
 	  webStackTitle: { color: 'black', fontSize: '12px' },
-	  webStackPara: { color: '#777777', fontSize: '12px' }
+	  webStackPara: { color: '#777777', fontSize: '12px' },
+	  servicesContainer: {
+	    textAlign: 'center',
+	    backgroundColor: '#060812',
+	    width: '100%',
+	    height: '740px'
+	  },
+	  servicesTitle: { color: 'white', fontSize: '12px' },
+	  servicesDisTitle: {
+	    marginLeft: '43%',
+	    marginTop: '-21%',
+	    color: 'white',
+	    fontSize: '15px',
+	    textAlign: '-webkit-left'
+	  },
+	  servicesDisPar1: {
+	    textAlign: '-webkit-left',
+	    marginLeft: '43%',
+	    marginTop: '-1%',
+	    color: '#6C6C6D',
+	    fontSize: '12px'
+	  },
+	  blockOne: {
+	    marginLeft: '15%'
+	  },
+	  servicesDisIcon: {
+	    height: '83px',
+	    marginTop: '52px',
+	    marginRight: '38px'
+	  },
+	  servicesIcon: { color: '#2962ff', fontSize: '120px', marginTop: '-4%' }
 	};
 
 	module.exports = styles;
@@ -25260,6 +25290,10 @@
 
 	var _WebStack2 = _interopRequireDefault(_WebStack);
 
+	var _Services = __webpack_require__(229);
+
+	var _Services2 = _interopRequireDefault(_Services);
+
 	var _Footer = __webpack_require__(227);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
@@ -25272,6 +25306,7 @@
 	    null,
 	    _react2.default.createElement(_NavBar2.default, null),
 	    _react2.default.createElement(_WebStack2.default, null),
+	    _react2.default.createElement(_Services2.default, null),
 	    _react2.default.createElement(_Footer2.default, null)
 	  );
 	};
@@ -25350,11 +25385,11 @@
 	          _react2.default.createElement(
 	            'li',
 	            { onClick: this.scrollHere.bind(this, 734), style: _style.tabHolder, href: '#' },
-	            'STACK'
+	            'STCK'
 	          ),
 	          _react2.default.createElement(
 	            'li',
-	            { style: _style.tabHolder, href: '#' },
+	            { onClick: this.scrollHere.bind(this, 1471), style: _style.tabHolder, href: '#' },
 	            'SERVICES'
 	          ),
 	          _react2.default.createElement(
@@ -25446,7 +25481,7 @@
 	        ),
 	        _react2.default.createElement(
 	          'li',
-	          { oncClick: this.scrollHere.bind(this, 734) },
+	          { onClick: this.scrollHere.bind(this, 734) },
 	          _react2.default.createElement(
 	            'a',
 	            { className: 'btn-floating waves-effect waves-light indigo accent-4 ' },
@@ -25459,7 +25494,7 @@
 	        ),
 	        _react2.default.createElement(
 	          'li',
-	          null,
+	          { onClick: this.scrollHere.bind(this, 1471) },
 	          _react2.default.createElement(
 	            'a',
 	            { className: 'btn-floating waves-effect waves-light indigo accent-4 ' },
@@ -25664,6 +25699,127 @@
 	}
 
 	module.exports = scrollTo;
+
+/***/ },
+/* 229 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _style = __webpack_require__(219);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Services = function Services(props) {
+	  return _react2.default.createElement(
+	    'div',
+	    { style: _style.servicesContainer, className: 'container' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'stackContainer faderTwo' },
+	      _react2.default.createElement(
+	        'i',
+	        { className: 'material-icons', style: _style.servicesIcon },
+	        'work'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        { style: _style.servicesTitle },
+	        'SERVICES'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        { style: _style.webStackPara },
+	        'If you need any work done these are the services I provide.'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'container-fluid' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'row' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'col s12' },
+	            _react2.default.createElement(
+	              'div',
+	              { style: _style.blockOne, className: 'col s5 offset-s2' },
+	              _react2.default.createElement('img', { className: 'col s4', style: _style.servicesDisIcon, src: 'http://imgh.us/map_11.svg' }),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'col s8' },
+	                _react2.default.createElement(
+	                  'p',
+	                  { style: _style.servicesDisTitle },
+	                  'User Experiance'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  { style: _style.servicesDisPar1 },
+	                  'Prototyping on paper and on tools like UXPin and InVision.'
+	                )
+	              ),
+	              _react2.default.createElement('img', { className: 'col s4', style: _style.servicesDisIcon, src: 'http://imgh.us/technology_(1).svg' }),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'col s8' },
+	                _react2.default.createElement(
+	                  'p',
+	                  { style: _style.servicesDisTitle },
+	                  'Web Design'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  { style: _style.servicesDisPar1 },
+	                  'Design using Sketch, specializing in minimal design.'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'blockTwo col s5' },
+	              _react2.default.createElement('img', { className: 'col s4', style: _style.servicesDisIcon, src: 'http://imgh.us/technology_(2).svg' }),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'col s8' },
+	                _react2.default.createElement(
+	                  'p',
+	                  { style: _style.servicesDisTitle },
+	                  'Backend'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  { style: _style.servicesDisPar1 },
+	                  'API design and web services using Node, Express, & MongoDB'
+	                )
+	              ),
+	              _react2.default.createElement('img', { className: 'col s4', style: _style.servicesDisIcon, src: 'http://imgh.us/technology_3.svg' }),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'col s8' },
+	                _react2.default.createElement(
+	                  'p',
+	                  { style: _style.servicesDisTitle },
+	                  'Web Development'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  { style: _style.servicesDisPar1 },
+	                  'HTML, CSS, JavaScript, ReactJS, & I also know a bit of AngularJS 1.5.X'
+	                )
+	              )
+	            )
+	          )
+	        )
+	      )
+	    )
+	  );
+	};
+	module.exports = Services;
 
 /***/ }
 /******/ ]);

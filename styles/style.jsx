@@ -73,7 +73,43 @@ const styles = {
   },
   webStackIcon: {color: '#2962ff', fontSize: '120px'},
   webStackTitle: {color: 'black', fontSize: '12px'},
-  webStackPara: {color: '#777777', fontSize: '12px'}
+  webStackPara: {color: '#777777', fontSize: '12px'},
+  servicesContainer: {
+    textAlign: 'center',
+    backgroundColor: '#060812',
+    width: '100%',
+    height: '740px'
+  },
+  servicesTitle: {color: 'white', fontSize: '12px'},
+  servicesDisTitle: {
+    marginLeft: '43%',
+    marginTop: '-21%',
+    color: 'white',
+    fontSize: '15px',
+    textAlign: '-webkit-left'
+  },
+  servicesDisPar1: {
+    textAlign: '-webkit-left',
+    marginLeft: '43%',
+    marginTop: '-1%',
+    color: '#6C6C6D',
+    fontSize: '12px'
+  },
+  blockOne: {
+    marginLeft: '15%'
+  },
+  servicesDisIcon: {
+    height: '83px',
+    marginTop: '52px',
+    marginRight: '38px'
+  },
+  servicesIcon: {color: '#2962ff', fontSize: '120px', marginTop: '-4%'},
 }
+
+
+
+
+
+
 
 module.exports = styles
