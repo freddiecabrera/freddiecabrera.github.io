@@ -39,8 +39,8 @@ const NavBar = React.createClass({
         <p className='pTag'>F</p>
         <ul className='menu'>
           <li onClick={this.scrollHere.bind(this, 734)} style={tabHolder} href="#">STACK</li>
-          <li onClick={this.scrollHere.bind(this, 1471)} style={tabHolder} href="#">SERVICES</li>
-          <li onClick={this.scrollHere.bind(this, 2302)} style={tabHolder} href="#">RESUME</li>
+          <li onClick={this.scrollHere.bind(this, 1578)} style={tabHolder} href="#">SERVICES</li>
+          <li onClick={this.scrollHere.bind(this, 2375)} style={tabHolder} href="#">RESUME</li>
           <li style={tabHolder} href="#">WORK</li>
           <li style={tabHolder} href="#">ABOUT</li>
         </ul>

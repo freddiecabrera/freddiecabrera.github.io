@@ -15,8 +15,8 @@ return (
     <ul>
       <li onClick={this.scrollHere.bind(this, 0)}><a className="btn-floating waves-effect waves-light indigo accent-4 "><i className="material-icons">home</i></a></li>
       <li onClick={this.scrollHere.bind(this, 734)}><a className="btn-floating waves-effect waves-light indigo accent-4 "><i className="material-icons">code</i></a></li>
-      <li onClick={this.scrollHere.bind(this, 1471)}><a className="btn-floating waves-effect waves-light indigo accent-4 "><i className="material-icons">work</i></a></li>
-      <li onClick={this.scrollHere.bind(this, 2302)}><a className="btn-floating waves-effect waves-light indigo accent-4 "><i className="material-icons">description</i></a></li>
+      <li onClick={this.scrollHere.bind(this, 1578)}><a className="btn-floating waves-effect waves-light indigo accent-4 "><i className="material-icons">work</i></a></li>
+      <li onClick={this.scrollHere.bind(this, 2375)}><a className="btn-floating waves-effect waves-light indigo accent-4 "><i className="material-icons">description</i></a></li>
       <li><a className="btn-floating waves-effect waves-light indigo accent-4 "><i className="material-icons">laptop_mac</i></a></li>
       <li><a className="btn-floating waves-effect waves-light indigo accent-4 "><i className="material-icons">accessibility</i></a></li>
     </ul>

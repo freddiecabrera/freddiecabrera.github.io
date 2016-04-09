@@ -25407,12 +25407,12 @@
 	          ),
 	          _react2.default.createElement(
 	            'li',
-	            { onClick: this.scrollHere.bind(this, 1471), style: _style.tabHolder, href: '#' },
+	            { onClick: this.scrollHere.bind(this, 1578), style: _style.tabHolder, href: '#' },
 	            'SERVICES'
 	          ),
 	          _react2.default.createElement(
 	            'li',
-	            { onClick: this.scrollHere.bind(this, 2302), style: _style.tabHolder, href: '#' },
+	            { onClick: this.scrollHere.bind(this, 2375), style: _style.tabHolder, href: '#' },
 	            'RESUME'
 	          ),
 	          _react2.default.createElement(
@@ -25512,7 +25512,7 @@
 	        ),
 	        _react2.default.createElement(
 	          'li',
-	          { onClick: this.scrollHere.bind(this, 1471) },
+	          { onClick: this.scrollHere.bind(this, 1578) },
 	          _react2.default.createElement(
 	            'a',
 	            { className: 'btn-floating waves-effect waves-light indigo accent-4 ' },
@@ -25525,7 +25525,7 @@
 	        ),
 	        _react2.default.createElement(
 	          'li',
-	          { onClick: this.scrollHere.bind(this, 2302) },
+	          { onClick: this.scrollHere.bind(this, 2375) },
 	          _react2.default.createElement(
 	            'a',
 	            { className: 'btn-floating waves-effect waves-light indigo accent-4 ' },
