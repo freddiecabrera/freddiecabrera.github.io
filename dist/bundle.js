@@ -25226,22 +25226,25 @@
 	    textAlign: 'center',
 	    marginTop: '20%',
 	    backgroundColor: 'white',
-	    width: '100%',
+	    overflow: 'hidden',
+	    minWidth: '100%',
 	    height: '740px'
 	  },
 	  footerBlock: {
-	    marginTop: '-1%',
+	    paddingTop: '1%',
 	    backgroundColor: 'black',
 	    width: '100%',
-	    height: '150px'
+	    height: '200px'
 	  },
+	  footerText: { color: 'white', textAlign: 'center', paddingTop: '4.4%', fontWeight: '300', fontStyle: 'light' },
 	  webStackIcon: { color: '#2962ff', fontSize: '120px' },
 	  webStackTitle: { color: 'black', fontSize: '12px' },
 	  webStackPara: { color: '#777777', fontSize: '12px' },
 	  servicesContainer: {
 	    textAlign: 'center',
 	    backgroundColor: '#060812',
-	    width: '100%',
+	    overflow: 'hidden',
+	    minWidth: '100%',
 	    height: '740px'
 	  },
 	  servicesTitle: { color: 'white', fontSize: '12px' },
@@ -25267,7 +25270,14 @@
 	    marginTop: '52px',
 	    marginRight: '38px'
 	  },
-	  servicesIcon: { color: '#2962ff', fontSize: '120px', marginTop: '-4%' }
+	  servicesIcon: { color: '#2962ff', fontSize: '120px', marginTop: '-4%' },
+	  resumeIcon: { color: '#2962ff', fontSize: '120px', marginTop: '12%' },
+	  resumeContainer: {
+	    textAlign: 'center',
+	    backgroundColor: '#06070C',
+	    overflow: 'hidden',
+	    minWidth: '100%'
+	  }
 	};
 
 	module.exports = styles;
@@ -25290,9 +25300,13 @@
 
 	var _WebStack2 = _interopRequireDefault(_WebStack);
 
-	var _Services = __webpack_require__(229);
+	var _Services = __webpack_require__(225);
 
 	var _Services2 = _interopRequireDefault(_Services);
+
+	var _Resume = __webpack_require__(226);
+
+	var _Resume2 = _interopRequireDefault(_Resume);
 
 	var _Footer = __webpack_require__(227);
 
@@ -25307,6 +25321,7 @@
 	    _react2.default.createElement(_NavBar2.default, null),
 	    _react2.default.createElement(_WebStack2.default, null),
 	    _react2.default.createElement(_Services2.default, null),
+	    _react2.default.createElement(_Resume2.default, null),
 	    _react2.default.createElement(_Footer2.default, null)
 	  );
 	};
@@ -25329,7 +25344,7 @@
 
 	var _HorizontalFab2 = _interopRequireDefault(_HorizontalFab);
 
-	var _ScrollTo = __webpack_require__(228);
+	var _ScrollTo = __webpack_require__(223);
 
 	var _ScrollTo2 = _interopRequireDefault(_ScrollTo);
 
@@ -25394,7 +25409,7 @@
 	          ),
 	          _react2.default.createElement(
 	            'li',
-	            { style: _style.tabHolder, href: '#' },
+	            { onClick: this.scrollHere.bind(this, 2211), style: _style.tabHolder, href: '#' },
 	            'RESUME'
 	          ),
 	          _react2.default.createElement(
@@ -25436,7 +25451,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _ScrollTo = __webpack_require__(228);
+	var _ScrollTo = __webpack_require__(223);
 
 	var _ScrollTo2 = _interopRequireDefault(_ScrollTo);
 
@@ -25507,7 +25522,7 @@
 	        ),
 	        _react2.default.createElement(
 	          'li',
-	          null,
+	          { onClick: this.scrollHere.bind(this, 2211) },
 	          _react2.default.createElement(
 	            'a',
 	            { className: 'btn-floating waves-effect waves-light indigo accent-4 ' },
@@ -25552,86 +25567,7 @@
 	module.exports = HorizontalFab;
 
 /***/ },
-/* 223 */,
-/* 224 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _style = __webpack_require__(219);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var WebStack = function WebStack(props) {
-	  return _react2.default.createElement(
-	    'div',
-	    { style: _style.webStackMargin, className: 'container' },
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'stackContainer faderTwo' },
-	      _react2.default.createElement(
-	        'i',
-	        { className: 'material-icons', style: _style.webStackIcon },
-	        'code'
-	      ),
-	      _react2.default.createElement(
-	        'p',
-	        { style: _style.webStackTitle },
-	        'STACK'
-	      ),
-	      _react2.default.createElement(
-	        'p',
-	        { style: _style.webStackPara },
-	        'This is the current stack that I like to work with. I also have some experiance with Angular 1.5.X'
-	      )
-	    ),
-	    _react2.default.createElement('img', { style: _style.mongoDB, className: 'faderTwo', src: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/45/MongoDB-Logo.svg/1054px-MongoDB-Logo.svg.png' }),
-	    _react2.default.createElement('img', { style: _style.expressJS, className: 'faderTwo', src: 'http://amt.in/img/services/express.png' }),
-	    _react2.default.createElement('img', { style: _style.reactJS, className: 'faderTwo', src: 'https://react-materialize.github.io/assets/react-materialize-logo.svg' }),
-	    _react2.default.createElement('img', { style: _style.nodeJS, className: 'faderTwo', src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png' })
-	  );
-	};
-
-	module.exports = WebStack;
-
-/***/ },
-/* 225 */,
-/* 226 */,
-/* 227 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _style = __webpack_require__(219);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var Footer = function Footer(props) {
-	  return _react2.default.createElement(
-	    'div',
-	    { style: _style.footerBlock },
-	    _react2.default.createElement(
-	      'p',
-	      { style: { color: 'white', textAlign: 'center', paddingTop: '50px', fontWeight: '300', fontStyle: 'light' } },
-	      '®2016 Freddie Cabrera. All Rights Reserved.',
-	      _react2.default.createElement('br', null),
-	      'Made with ♡ under the California sun.'
-	    )
-	  );
-	};
-
-	module.exports = Footer;
-
-/***/ },
-/* 228 */
+/* 223 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -25701,7 +25637,53 @@
 	module.exports = scrollTo;
 
 /***/ },
-/* 229 */
+/* 224 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _style = __webpack_require__(219);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var WebStack = function WebStack(props) {
+	  return _react2.default.createElement(
+	    'div',
+	    { style: _style.webStackMargin, className: 'container' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'stackContainer faderTwo' },
+	      _react2.default.createElement(
+	        'i',
+	        { className: 'material-icons', style: _style.webStackIcon },
+	        'code'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        { style: _style.webStackTitle },
+	        'STACK'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        { style: _style.webStackPara },
+	        'This is the current stack that I like to work with. I also have some experiance with Angular 1.5.X'
+	      )
+	    ),
+	    _react2.default.createElement('img', { style: _style.mongoDB, className: 'faderTwo', src: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/45/MongoDB-Logo.svg/1054px-MongoDB-Logo.svg.png' }),
+	    _react2.default.createElement('img', { style: _style.expressJS, className: 'faderTwo', src: 'http://amt.in/img/services/express.png' }),
+	    _react2.default.createElement('img', { style: _style.reactJS, className: 'faderTwo', src: 'https://react-materialize.github.io/assets/react-materialize-logo.svg' }),
+	    _react2.default.createElement('img', { style: _style.nodeJS, className: 'faderTwo', src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png' })
+	  );
+	};
+
+	module.exports = WebStack;
+
+/***/ },
+/* 225 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25820,6 +25802,580 @@
 	  );
 	};
 	module.exports = Services;
+
+/***/ },
+/* 226 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _style = __webpack_require__(219);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Resume = function Resume(props) {
+	  return _react2.default.createElement(
+	    'div',
+	    { style: _style.resumeContainer },
+	    _react2.default.createElement(
+	      'i',
+	      { className: 'material-icons', style: _style.resumeIcon },
+	      'description'
+	    ),
+	    _react2.default.createElement(
+	      'p',
+	      { style: _style.servicesTitle },
+	      'RESUME'
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'container-fluid', style: { color: 'white', marginTop: '10%' } },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'row' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'col s12' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'col s4', style: { marginLeft: '6%' } },
+	            _react2.default.createElement('img', { style: { height: '60px' }, src: 'http://imgh.us/suitcase.svg', alt: '' }),
+	            _react2.default.createElement(
+	              'h6',
+	              null,
+	              'WORK EXPERIANCE'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'col s5 push-s1', style: { textAlign: '-webkit-left' } },
+	            _react2.default.createElement(
+	              'p',
+	              { style: { backgroundColor: '#2962ff', minWidth: '300%' } },
+	              'OPERATOR 1'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Weatherford COROD | April 2014 - October 2015 ',
+	              _react2.default.createElement('br', null),
+	              ' ',
+	              _react2.default.createElement(
+	                'a',
+	                { style: { color: '#2962ff' }, href: 'http://bit.ly/1qCDTSa' },
+	                'weatherford.com'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { style: { color: '#2962ff' } },
+	              '19 months'
+	            ),
+	            _react2.default.createElement('div', { className: 'divider', style: { marginRight: '30%', backgroundColor: '#707070' } }),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Build incoming orders ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Ensure orders are correct ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Weld material with fusion welder ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Grind Weld to specified size ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Measure weld and material with micrometer ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Sand blast COROD ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Heat treat and harden material ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Build COROD strings to specified footage ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Maintain  clean worksite'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'col s12', style: { textAlign: '-webkit-left', marginLeft: '48%' } },
+	            _react2.default.createElement(
+	              'p',
+	              { style: { backgroundColor: '#2962ff', minWidth: '300%' } },
+	              'FIELD SERVICE TECHNICIAN'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'LIBERTY LIFT SOLUTIONS LLC | September 2013 - April 2014 ',
+	              _react2.default.createElement('br', null),
+	              ' ',
+	              _react2.default.createElement(
+	                'a',
+	                { style: { color: '#2962ff' }, href: 'http://bit.ly/1RWUw1v' },
+	                'libertylift.com'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { style: { color: '#2962ff' } },
+	              '8 months'
+	            ),
+	            _react2.default.createElement('div', { className: 'divider', style: { marginRight: '72%', backgroundColor: '#707070' } }),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Preventive maintenance inspections ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Pumping unit installation ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Polished rod replacement ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Changing of belts, sheaves and prime movers ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Optimization – stroke changes, unit balancing and rod string adjustment ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Bearing maintenance ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Gas lift system setup and repair ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Hydraulic jet pump installation and service'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'col s12', style: { textAlign: '-webkit-left', marginLeft: '48%' } },
+	            _react2.default.createElement(
+	              'p',
+	              { style: { backgroundColor: '#2962ff', minWidth: '300%' } },
+	              'FIELD SERVICE TECHNICIAN'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Weatherford ALS | March 2013 - August 2013 ',
+	              _react2.default.createElement('br', null),
+	              ' ',
+	              _react2.default.createElement(
+	                'a',
+	                { style: { color: '#2962ff' }, href: 'http://bit.ly/1WjtFlA' },
+	                'weatherford.com'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { style: { color: '#2962ff' } },
+	              '6 months'
+	            ),
+	            _react2.default.createElement('div', { className: 'divider', style: { marginRight: '72%', backgroundColor: '#707070' } }),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Preventive maintenance inspections ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Pumping unit installation ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Polished rod replacement ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Changing of belts, sheaves and prime movers ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Optimization – stroke changes, unit balancing and rod string adjustment ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Bearing maintenance ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Gas lift system setup and repair ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Hydraulic jet pump installation and service'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'col s12', style: { textAlign: '-webkit-left', marginLeft: '48%' } },
+	            _react2.default.createElement(
+	              'p',
+	              { style: { backgroundColor: '#2962ff', minWidth: '300%' } },
+	              'SHOP HAND'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Weatherford COROD | April 2013 - March 2013 ',
+	              _react2.default.createElement('br', null),
+	              ' ',
+	              _react2.default.createElement(
+	                'a',
+	                { style: { color: '#2962ff' }, href: 'http://bit.ly/1qCDTSa' },
+	                'weatherford.com'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { style: { color: '#2962ff' } },
+	              '11 months'
+	            ),
+	            _react2.default.createElement('div', { className: 'divider', style: { marginRight: '72%', backgroundColor: '#707070' } }),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Operate 5 ton overhead cranes ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Order parts/tools needed for the entire plant. ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Shipping and receiving ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Maintenance ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Cut, weld, and grind COROD samples when needed ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Operate Komatsu loader ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Operate Mig welder ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Operate torch ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' Maintain clean worksite'
+	            )
+	          )
+	        ),
+	        _react2.default.createElement('div', { className: 'divider col s12', style: { backgroundColor: '#707070', margin: '120px 0 120px 0' } }),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'col s12' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'col s4', style: { marginLeft: '6%' } },
+	            _react2.default.createElement('img', { style: { height: '60px' }, src: 'http://imgh.us/medical.svg', alt: '' }),
+	            _react2.default.createElement(
+	              'h6',
+	              null,
+	              'EDUCATION'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'col s5 push-s1', style: { textAlign: '-webkit-left' } },
+	            _react2.default.createElement(
+	              'p',
+	              { style: { backgroundColor: '#2962ff', minWidth: '300%' } },
+	              'FULL STACK WEB DEVELOPMENT'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Self Taught University | June 2015 - Present '
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { style: { color: '#2962ff' } },
+	              'Current'
+	            ),
+	            _react2.default.createElement('div', { className: 'divider', style: { marginRight: '30%', backgroundColor: '#707070' } }),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'I have been learning Full Stack Web Development from the best teachers in the industry through these websites: ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' ',
+	              _react2.default.createElement(
+	                'a',
+	                { style: { color: 'white' }, href: 'http://www.reactjsprogram.com/' },
+	                ' reactjsprogram.com'
+	              ),
+	              ' ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' ',
+	              _react2.default.createElement(
+	                'a',
+	                { style: { color: 'white' }, href: 'https://frontendmasters.com/courses/' },
+	                ' frontendmasters.com'
+	              ),
+	              ' ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' ',
+	              _react2.default.createElement(
+	                'a',
+	                { style: { color: 'white' }, href: 'https://egghead.io/' },
+	                ' egghead.io'
+	              ),
+	              ' ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' ',
+	              _react2.default.createElement(
+	                'a',
+	                { style: { color: 'white' }, href: 'https://www.freecodecamp.com/' },
+	                ' freecodecamp.com'
+	              ),
+	              ' ',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: '#2962ff' } },
+	                '-'
+	              ),
+	              ' ',
+	              _react2.default.createElement(
+	                'a',
+	                { style: { color: 'white' }, href: 'https://www.coursera.org/' },
+	                ' coursera.org'
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'col s12', style: { textAlign: '-webkit-left', marginLeft: '48%', marginBottom: '10%' } },
+	            _react2.default.createElement(
+	              'p',
+	              { style: { backgroundColor: '#2962ff', minWidth: '300%' } },
+	              'TRANSFEROLOGY'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Taft College | 2010 - 2011 '
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { style: { color: '#2962ff' } },
+	              'Dropped Out'
+	            ),
+	            _react2.default.createElement('div', { className: 'divider', style: { marginRight: '72%', backgroundColor: '#707070' } }),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'I was blessed with a son at the age of 18. I dropped out so that I could work ',
+	              _react2.default.createElement('br', null),
+	              ' and put my wife through college. I was working on transfer credits.'
+	            )
+	          )
+	        )
+	      )
+	    )
+	  );
+	};
+
+	module.exports = Resume;
+
+/***/ },
+/* 227 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _style = __webpack_require__(219);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Footer = function Footer(props) {
+	  return _react2.default.createElement(
+	    'div',
+	    { style: _style.footerBlock },
+	    _react2.default.createElement(
+	      'p',
+	      { style: _style.footerText },
+	      '®2016 Freddie Cabrera. All Rights Reserved.',
+	      _react2.default.createElement('br', null),
+	      'Made with ♡ under the California sun.'
+	    )
+	  );
+	};
+
+	module.exports = Footer;
 
 /***/ }
 /******/ ]);

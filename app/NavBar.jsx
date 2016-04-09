@@ -5,9 +5,9 @@ import scrollTo from './ScrollTo'
 
 const NavBar = React.createClass({
   getInitialState () {
-  return ({
-    HF: ''
-  })
+    return ({
+      HF: ''
+    })
   },
   componentDidMount () {
     var  lastScrollPosition = 0
@@ -40,7 +40,7 @@ const NavBar = React.createClass({
         <ul className='menu'>
           <li onClick={this.scrollHere.bind(this, 734)} style={tabHolder} href="#">STACK</li>
           <li onClick={this.scrollHere.bind(this, 1471)} style={tabHolder} href="#">SERVICES</li>
-          <li style={tabHolder} href="#">RESUME</li>
+          <li onClick={this.scrollHere.bind(this, 2211)} style={tabHolder} href="#">RESUME</li>
           <li style={tabHolder} href="#">ABOUT</li>
           <li style={tabHolder} href="#">CONTACT</li>
         </ul>

@@ -62,22 +62,25 @@ const styles = {
     textAlign: 'center',
     marginTop: '20%',
     backgroundColor: 'white',
-    width: '100%',
+    overflow: 'hidden',
+    minWidth: '100%',
     height: '740px'
   },
   footerBlock: {
-    marginTop: '-1%',
+    paddingTop: '1%',
     backgroundColor: 'black',
     width: '100%',
-    height: '150px'
+    height: '200px'
   },
+  footerText: {color: 'white', textAlign: 'center', paddingTop: '4.4%', fontWeight: '300', fontStyle: 'light'},
   webStackIcon: {color: '#2962ff', fontSize: '120px'},
   webStackTitle: {color: 'black', fontSize: '12px'},
   webStackPara: {color: '#777777', fontSize: '12px'},
   servicesContainer: {
     textAlign: 'center',
     backgroundColor: '#060812',
-    width: '100%',
+    overflow: 'hidden',
+    minWidth: '100%',
     height: '740px'
   },
   servicesTitle: {color: 'white', fontSize: '12px'},
@@ -104,6 +107,13 @@ const styles = {
     marginRight: '38px'
   },
   servicesIcon: {color: '#2962ff', fontSize: '120px', marginTop: '-4%'},
+  resumeIcon: {color: '#2962ff', fontSize: '120px', marginTop: '12%'},
+  resumeContainer: {
+    textAlign: 'center',
+    backgroundColor: '#06070C',
+    overflow: 'hidden',
+    minWidth: '100%'
+  }
 }
 
 
