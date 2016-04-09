@@ -8,7 +8,7 @@ const HorizontalFab = React.createClass({
   },
   render () {
 return (
-  <div className="fixed-action-btn vertical faderThree" style={{bottom: '45px', right: '24px'}}>
+  <div className="faderThree fixed-action-btn click-to-toggle animated infinite pulse vertical" style={{bottom: '45px', right: '24px'}}>
     <a className="btn-floating btn-large indigo accent-4">
       <i className="large material-icons">more_vert</i>
     </a>

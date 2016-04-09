@@ -25468,7 +25468,7 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      { className: 'fixed-action-btn vertical faderThree', style: { bottom: '45px', right: '24px' } },
+	      { className: 'faderThree fixed-action-btn click-to-toggle animated infinite pulse vertical', style: { bottom: '45px', right: '24px' } },
 	      _react2.default.createElement(
 	        'a',
 	        { className: 'btn-floating btn-large indigo accent-4' },
