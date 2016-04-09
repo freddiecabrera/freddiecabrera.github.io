@@ -1,10 +1,10 @@
 import React from 'react'
-import { servicesContainer, servicesIcon, servicesTitle, webStackPara, servicesDisIcon, servicesDisTitle, servicesDisPar1, blockOne } from '../styles/style'
+import { servicesContainer, webStackIcon, servicesTitle, webStackPara, servicesDisIcon, servicesDisTitle, servicesDisPar1, blockOne } from '../styles/style'
 
 const Services = props => (
   <div style={ servicesContainer } className='container'>
     <div className='stackContainer faderTwo'>
-      <i className="material-icons" style={servicesIcon}>work</i>
+    <img  src='http://imgh.us/suitcase_1.svg' style={webStackIcon} />
       <p style={servicesTitle}>SERVICES</p>
       <p style={webStackPara}>If you need any work done these are the services I provide.</p>
 

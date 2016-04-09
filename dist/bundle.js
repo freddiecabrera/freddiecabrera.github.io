@@ -25237,7 +25237,7 @@
 	    height: '200px'
 	  },
 	  footerText: { color: 'white', textAlign: 'center', paddingTop: '4.4%', fontWeight: '300', fontStyle: 'light' },
-	  webStackIcon: { color: '#2962ff', fontSize: '120px' },
+	  webStackIcon: { height: '145px' },
 	  webStackTitle: { color: 'black', fontSize: '12px' },
 	  webStackPara: { color: '#777777', fontSize: '12px' },
 	  servicesContainer: {
@@ -25245,7 +25245,7 @@
 	    backgroundColor: '#060812',
 	    overflow: 'hidden',
 	    minWidth: '100%',
-	    height: '740px'
+	    height: '835px'
 	  },
 	  servicesTitle: { color: 'white', fontSize: '12px' },
 	  servicesDisTitle: {
@@ -25271,13 +25271,16 @@
 	    marginRight: '38px'
 	  },
 	  servicesIcon: { color: '#2962ff', fontSize: '120px', marginTop: '-4%' },
-	  resumeIcon: { color: '#2962ff', fontSize: '120px', marginTop: '12%' },
+	  resumeIcon: { height: '145px', marginTop: '14%' },
 	  resumeContainer: {
 	    textAlign: 'center',
 	    backgroundColor: '#06070C',
 	    overflow: 'hidden',
 	    minWidth: '100%'
-	  }
+	  },
+	  resumeDashColor: { color: '#2962ff' },
+	  resumeParaStyle: { fontStyle: 'light', fontWeight: '300', color: '#707070', fontSize: '12px' },
+	  dividerColors: { marginRight: '72%', backgroundColor: 'white' }
 	};
 
 	module.exports = styles;
@@ -25409,18 +25412,18 @@
 	          ),
 	          _react2.default.createElement(
 	            'li',
-	            { onClick: this.scrollHere.bind(this, 2211), style: _style.tabHolder, href: '#' },
+	            { onClick: this.scrollHere.bind(this, 2302), style: _style.tabHolder, href: '#' },
 	            'RESUME'
 	          ),
 	          _react2.default.createElement(
 	            'li',
 	            { style: _style.tabHolder, href: '#' },
-	            'ABOUT'
+	            'WORK'
 	          ),
 	          _react2.default.createElement(
 	            'li',
 	            { style: _style.tabHolder, href: '#' },
-	            'CONTACT'
+	            'ABOUT'
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -25522,7 +25525,7 @@
 	        ),
 	        _react2.default.createElement(
 	          'li',
-	          { onClick: this.scrollHere.bind(this, 2211) },
+	          { onClick: this.scrollHere.bind(this, 2302) },
 	          _react2.default.createElement(
 	            'a',
 	            { className: 'btn-floating waves-effect waves-light indigo accent-4 ' },
@@ -25542,7 +25545,7 @@
 	            _react2.default.createElement(
 	              'i',
 	              { className: 'material-icons' },
-	              'accessibility'
+	              'laptop_mac'
 	            )
 	          )
 	        ),
@@ -25555,7 +25558,7 @@
 	            _react2.default.createElement(
 	              'i',
 	              { className: 'material-icons' },
-	              'email'
+	              'accessibility'
 	            )
 	          )
 	        )
@@ -25657,11 +25660,7 @@
 	    _react2.default.createElement(
 	      'div',
 	      { className: 'stackContainer faderTwo' },
-	      _react2.default.createElement(
-	        'i',
-	        { className: 'material-icons', style: _style.webStackIcon },
-	        'code'
-	      ),
+	      _react2.default.createElement('img', { src: 'http://imgh.us/code_2.svg', style: _style.webStackIcon }),
 	      _react2.default.createElement(
 	        'p',
 	        { style: _style.webStackTitle },
@@ -25703,11 +25702,7 @@
 	    _react2.default.createElement(
 	      'div',
 	      { className: 'stackContainer faderTwo' },
-	      _react2.default.createElement(
-	        'i',
-	        { className: 'material-icons', style: _style.servicesIcon },
-	        'work'
-	      ),
+	      _react2.default.createElement('img', { src: 'http://imgh.us/suitcase_1.svg', style: _style.webStackIcon }),
 	      _react2.default.createElement(
 	        'p',
 	        { style: _style.servicesTitle },
@@ -25821,11 +25816,7 @@
 	  return _react2.default.createElement(
 	    'div',
 	    { style: _style.resumeContainer },
-	    _react2.default.createElement(
-	      'i',
-	      { className: 'material-icons', style: _style.resumeIcon },
-	      'description'
-	    ),
+	    _react2.default.createElement('img', { src: 'http://imgh.us/interface_2.svg', style: _style.resumeIcon }),
 	    _react2.default.createElement(
 	      'p',
 	      { style: _style.servicesTitle },
@@ -25875,69 +25866,69 @@
 	              { style: { color: '#2962ff' } },
 	              '19 months'
 	            ),
-	            _react2.default.createElement('div', { className: 'divider', style: { marginRight: '30%', backgroundColor: '#707070' } }),
+	            _react2.default.createElement('div', { className: 'divider', style: { marginRight: '30%', backgroundColor: 'white' } }),
 	            _react2.default.createElement(
 	              'p',
-	              null,
+	              { style: _style.resumeParaStyle },
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Build incoming orders ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Ensure orders are correct ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Weld material with fusion welder ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Grind Weld to specified size ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Measure weld and material with micrometer ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Sand blast COROD ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Heat treat and harden material ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Build COROD strings to specified footage ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Maintain  clean worksite'
@@ -25968,62 +25959,62 @@
 	              { style: { color: '#2962ff' } },
 	              '8 months'
 	            ),
-	            _react2.default.createElement('div', { className: 'divider', style: { marginRight: '72%', backgroundColor: '#707070' } }),
+	            _react2.default.createElement('div', { className: 'divider', style: _style.dividerColors }),
 	            _react2.default.createElement(
 	              'p',
-	              null,
+	              { style: _style.resumeParaStyle },
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Preventive maintenance inspections ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Pumping unit installation ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Polished rod replacement ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Changing of belts, sheaves and prime movers ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Optimization – stroke changes, unit balancing and rod string adjustment ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Bearing maintenance ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Gas lift system setup and repair ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Hydraulic jet pump installation and service'
@@ -26054,62 +26045,62 @@
 	              { style: { color: '#2962ff' } },
 	              '6 months'
 	            ),
-	            _react2.default.createElement('div', { className: 'divider', style: { marginRight: '72%', backgroundColor: '#707070' } }),
+	            _react2.default.createElement('div', { className: 'divider', style: _style.dividerColors }),
 	            _react2.default.createElement(
 	              'p',
-	              null,
+	              { style: _style.resumeParaStyle },
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Preventive maintenance inspections ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Pumping unit installation ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Polished rod replacement ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Changing of belts, sheaves and prime movers ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Optimization – stroke changes, unit balancing and rod string adjustment ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Bearing maintenance ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Gas lift system setup and repair ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Hydraulic jet pump installation and service'
@@ -26140,69 +26131,69 @@
 	              { style: { color: '#2962ff' } },
 	              '11 months'
 	            ),
-	            _react2.default.createElement('div', { className: 'divider', style: { marginRight: '72%', backgroundColor: '#707070' } }),
+	            _react2.default.createElement('div', { className: 'divider', style: _style.dividerColors }),
 	            _react2.default.createElement(
 	              'p',
-	              null,
+	              { style: _style.resumeParaStyle },
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Operate 5 ton overhead cranes ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Order parts/tools needed for the entire plant. ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Shipping and receiving ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Maintenance ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Cut, weld, and grind COROD samples when needed ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Operate Komatsu loader ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Operate Mig welder ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Operate torch ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' Maintain clean worksite'
@@ -26241,73 +26232,73 @@
 	              { style: { color: '#2962ff' } },
 	              'Current'
 	            ),
-	            _react2.default.createElement('div', { className: 'divider', style: { marginRight: '30%', backgroundColor: '#707070' } }),
+	            _react2.default.createElement('div', { className: 'divider', style: { marginRight: '30%', backgroundColor: 'white' } }),
 	            _react2.default.createElement(
 	              'p',
-	              null,
+	              { style: _style.resumeParaStyle },
 	              'I have been learning Full Stack Web Development from the best teachers in the industry through these websites: ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' ',
 	              _react2.default.createElement(
 	                'a',
-	                { style: { color: 'white' }, href: 'http://www.reactjsprogram.com/' },
+	                { style: _style.resumeParaStyle, href: 'http://www.reactjsprogram.com/' },
 	                ' reactjsprogram.com'
 	              ),
 	              ' ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' ',
 	              _react2.default.createElement(
 	                'a',
-	                { style: { color: 'white' }, href: 'https://frontendmasters.com/courses/' },
+	                { style: _style.resumeParaStyle, href: 'https://frontendmasters.com/courses/' },
 	                ' frontendmasters.com'
 	              ),
 	              ' ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' ',
 	              _react2.default.createElement(
 	                'a',
-	                { style: { color: 'white' }, href: 'https://egghead.io/' },
+	                { style: _style.resumeParaStyle, href: 'https://egghead.io/' },
 	                ' egghead.io'
 	              ),
 	              ' ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' ',
 	              _react2.default.createElement(
 	                'a',
-	                { style: { color: 'white' }, href: 'https://www.freecodecamp.com/' },
+	                { style: _style.resumeParaStyle, href: 'https://www.freecodecamp.com/' },
 	                ' freecodecamp.com'
 	              ),
 	              ' ',
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'span',
-	                { style: { color: '#2962ff' } },
+	                { style: _style.resumeDashColor },
 	                '-'
 	              ),
 	              ' ',
 	              _react2.default.createElement(
 	                'a',
-	                { style: { color: 'white' }, href: 'https://www.coursera.org/' },
+	                { style: _style.resumeParaStyle, href: 'https://www.coursera.org/' },
 	                ' coursera.org'
 	              )
 	            )
@@ -26330,13 +26321,13 @@
 	              { style: { color: '#2962ff' } },
 	              'Dropped Out'
 	            ),
-	            _react2.default.createElement('div', { className: 'divider', style: { marginRight: '72%', backgroundColor: '#707070' } }),
+	            _react2.default.createElement('div', { className: 'divider', style: _style.dividerColors }),
 	            _react2.default.createElement(
 	              'p',
-	              null,
-	              'I dropped out so that I could work to take care of my family and put ',
+	              { style: _style.resumeParaStyle },
+	              'I dropped out so that I could work to take care of my family and put my wife through college. I was ',
 	              _react2.default.createElement('br', null),
-	              ' my wife through college. I was working on transfer credits.'
+	              ' working on transfer credits.'
 	            )
 	          )
 	        )

@@ -73,7 +73,7 @@ const styles = {
     height: '200px'
   },
   footerText: {color: 'white', textAlign: 'center', paddingTop: '4.4%', fontWeight: '300', fontStyle: 'light'},
-  webStackIcon: {color: '#2962ff', fontSize: '120px'},
+  webStackIcon: {height: '145px'},
   webStackTitle: {color: 'black', fontSize: '12px'},
   webStackPara: {color: '#777777', fontSize: '12px'},
   servicesContainer: {
@@ -81,7 +81,7 @@ const styles = {
     backgroundColor: '#060812',
     overflow: 'hidden',
     minWidth: '100%',
-    height: '740px'
+    height: '835px'
   },
   servicesTitle: {color: 'white', fontSize: '12px'},
   servicesDisTitle: {
@@ -107,13 +107,16 @@ const styles = {
     marginRight: '38px'
   },
   servicesIcon: {color: '#2962ff', fontSize: '120px', marginTop: '-4%'},
-  resumeIcon: {color: '#2962ff', fontSize: '120px', marginTop: '12%'},
+  resumeIcon: {height: '145px', marginTop: '14%'},
   resumeContainer: {
     textAlign: 'center',
     backgroundColor: '#06070C',
     overflow: 'hidden',
     minWidth: '100%'
-  }
+  },
+  resumeDashColor:{color: '#2962ff'},
+  resumeParaStyle: {fontStyle: 'light', fontWeight: '300', color: '#707070', fontSize: '12px'},
+  dividerColors: {marginRight: '72%', backgroundColor: 'white'}
 }
 
 

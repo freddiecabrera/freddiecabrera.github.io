@@ -40,9 +40,9 @@ const NavBar = React.createClass({
         <ul className='menu'>
           <li onClick={this.scrollHere.bind(this, 734)} style={tabHolder} href="#">STACK</li>
           <li onClick={this.scrollHere.bind(this, 1471)} style={tabHolder} href="#">SERVICES</li>
-          <li onClick={this.scrollHere.bind(this, 2211)} style={tabHolder} href="#">RESUME</li>
+          <li onClick={this.scrollHere.bind(this, 2302)} style={tabHolder} href="#">RESUME</li>
+          <li style={tabHolder} href="#">WORK</li>
           <li style={tabHolder} href="#">ABOUT</li>
-          <li style={tabHolder} href="#">CONTACT</li>
         </ul>
         <h4 style={navHeader}>WELCOME</h4>
         <p style={navHeaderP}>I hope you enjoy your experiance, scroll down and get to know me.</p>

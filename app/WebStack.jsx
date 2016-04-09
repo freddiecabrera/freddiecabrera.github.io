@@ -4,7 +4,7 @@ import { webStackMargin, mongoDB, expressJS, reactJS, nodeJS, webStackIcon, webS
 const WebStack = props => (
   <div style={ webStackMargin } className='container'>
     <div className='stackContainer faderTwo'>
-      <i className="material-icons" style={webStackIcon}>code</i>
+      <img  src='http://imgh.us/code_2.svg' style={webStackIcon} />
       <p style={webStackTitle}>STACK</p>
       <p style={webStackPara}>This is the current stack that I like to work with. I also have some experiance with Angular 1.5.X</p>
     </div>
