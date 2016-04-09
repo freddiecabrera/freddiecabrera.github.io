@@ -26334,9 +26334,9 @@
 	            _react2.default.createElement(
 	              'p',
 	              null,
-	              'I was blessed with a son at the age of 18. I dropped out so that I could work ',
+	              'I dropped out so that I could work to take care of my family and put ',
 	              _react2.default.createElement('br', null),
-	              ' and put my wife through college. I was working on transfer credits.'
+	              ' my wife through college. I was working on transfer credits.'
 	            )
 	          )
 	        )

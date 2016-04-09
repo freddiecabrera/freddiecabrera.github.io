@@ -107,7 +107,7 @@ const Resume = props => (
             <p>Taft College | 2010 - 2011 </p>
             <p style={{color: '#2962ff'}}>Dropped Out</p>
             <div className="divider" style={{marginRight: '72%', backgroundColor: '#707070'}} ></div>
-            <p>I was blessed with a son at the age of 18. I dropped out so that I could work <br /> and put my wife through college. I was working on transfer credits.</p>
+            <p>I dropped out so that I could work to take care of my family and put <br /> my wife through college. I was working on transfer credits.</p>
           </div>
         </div>
       </div>
