@@ -25852,7 +25852,7 @@
 	            _react2.default.createElement(
 	              'h6',
 	              null,
-	              'WORK EXPERIANCE'
+	              'WORK EXPERIENCE'
 	            )
 	          ),
 	          _react2.default.createElement(

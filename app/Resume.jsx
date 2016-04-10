@@ -11,7 +11,7 @@ const Resume = props => (
         <div className='col s12'>
           <div className='col s4' style={{marginLeft: '6%'}}>
             <img style={{height: '60px'}} src="http://imgh.us/suitcase.svg" alt=""/>
-            <h6>WORK EXPERIANCE</h6>
+            <h6>WORK EXPERIENCE</h6>
           </div>
           <div className='col s5 push-s1' style={{textAlign: '-webkit-left'}}>
             <p style={{backgroundColor: '#2962ff', minWidth: '300%'}}>OPERATOR 1</p>
