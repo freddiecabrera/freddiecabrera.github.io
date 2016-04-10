@@ -3,6 +3,7 @@ import NavBar from './NavBar'
 import WebStack from './WebStack'
 import Services from './Services'
 import Resume from './Resume'
+import Work from './Work'
 import Footer from './Footer'
 
 
@@ -12,6 +13,7 @@ const Home = props => (
       <WebStack />
       <Services />
       <Resume />
+      <Work />
       <Footer />
   </div>
 )

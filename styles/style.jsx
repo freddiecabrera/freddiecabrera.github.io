@@ -116,7 +116,16 @@ const styles = {
   },
   resumeDashColor:{color: '#2962ff'},
   resumeParaStyle: {fontStyle: 'light', fontWeight: '300', color: '#707070', fontSize: '12px'},
-  dividerColors: {marginRight: '72%', backgroundColor: 'white'}
+  dividerColors: {marginRight: '72%', backgroundColor: 'white'},
+  servicesContainer: {
+    textAlign: 'center',
+    backgroundColor: 'white',
+    overflow: 'hidden',
+    minWidth: '100%',
+    height: '950px'
+  },
+  webStackTitle: {color: 'black', fontSize: '12px'},
+
 }
 
 

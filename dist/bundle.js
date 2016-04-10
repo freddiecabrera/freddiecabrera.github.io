@@ -25162,7 +25162,11 @@
 
 	'use strict';
 
-	var styles = {
+	var _styles;
+
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+	var styles = (_styles = {
 	  spHeader: {
 	    fontWeight: '300',
 	    fontStyle: 'thin',
@@ -25281,7 +25285,13 @@
 	  resumeDashColor: { color: '#2962ff' },
 	  resumeParaStyle: { fontStyle: 'light', fontWeight: '300', color: '#707070', fontSize: '12px' },
 	  dividerColors: { marginRight: '72%', backgroundColor: 'white' }
-	};
+	}, _defineProperty(_styles, 'servicesContainer', {
+	  textAlign: 'center',
+	  backgroundColor: 'white',
+	  overflow: 'hidden',
+	  minWidth: '100%',
+	  height: '950px'
+	}), _defineProperty(_styles, 'webStackTitle', { color: 'black', fontSize: '12px' }), _styles);
 
 	module.exports = styles;
 
@@ -25311,6 +25321,10 @@
 
 	var _Resume2 = _interopRequireDefault(_Resume);
 
+	var _Work = __webpack_require__(228);
+
+	var _Work2 = _interopRequireDefault(_Work);
+
 	var _Footer = __webpack_require__(227);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
@@ -25325,6 +25339,7 @@
 	    _react2.default.createElement(_WebStack2.default, null),
 	    _react2.default.createElement(_Services2.default, null),
 	    _react2.default.createElement(_Resume2.default, null),
+	    _react2.default.createElement(_Work2.default, null),
 	    _react2.default.createElement(_Footer2.default, null)
 	  );
 	};
@@ -25417,7 +25432,7 @@
 	          ),
 	          _react2.default.createElement(
 	            'li',
-	            { style: _style.tabHolder, href: '#' },
+	            { onClick: this.scrollHere.bind(this, 5192), style: _style.tabHolder, href: '#' },
 	            'WORK'
 	          ),
 	          _react2.default.createElement(
@@ -25538,7 +25553,7 @@
 	        ),
 	        _react2.default.createElement(
 	          'li',
-	          null,
+	          { onClick: this.scrollHere.bind(this, 5192) },
 	          _react2.default.createElement(
 	            'a',
 	            { className: 'btn-floating waves-effect waves-light indigo accent-4 ' },
@@ -26367,6 +26382,182 @@
 	};
 
 	module.exports = Footer;
+
+/***/ },
+/* 228 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _style = __webpack_require__(219);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Work = function Work(pops) {
+	  return _react2.default.createElement(
+	    'div',
+	    { style: _style.servicesContainer, className: 'container' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'stackContainer faderTwo' },
+	      _react2.default.createElement('img', { src: 'http://imgh.us/webdesign.svg', style: _style.webStackIcon }),
+	      _react2.default.createElement(
+	        'p',
+	        { style: _style.workTitle },
+	        'PORTFOLIO'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        { style: _style.webStackPara },
+	        'These are some of the projects I have built.'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'container-fluid' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'row' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'col s12' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'card col s3 z-depth-4', style: { marginLeft: '6%', marginTop: '6%' } },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'card-image waves-effect waves-block waves-light' },
+	                _react2.default.createElement('img', { className: 'activator', src: 'https://d13yacurqjgara.cloudfront.net/users/366584/screenshots/2473300/404-01.png' })
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'card-content' },
+	                _react2.default.createElement(
+	                  'span',
+	                  { className: 'card-title activator grey-text text-darken-4' },
+	                  'Project',
+	                  _react2.default.createElement(
+	                    'i',
+	                    { className: 'material-icons right' },
+	                    'more_vert'
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'card-reveal' },
+	                _react2.default.createElement(
+	                  'span',
+	                  { className: 'card-title grey-text text-darken-4' },
+	                  'Project',
+	                  _react2.default.createElement(
+	                    'i',
+	                    { className: 'material-icons right' },
+	                    'close'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  'Oh snap! It looks like I haven\'t finished any projects worth showing. I\'m working on it though just hold up a bit.'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'card col s3 z-depth-4', style: { marginLeft: '6%', marginTop: '6%' } },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'card-image waves-effect waves-block waves-light' },
+	                _react2.default.createElement('img', { className: 'activator', src: 'https://d13yacurqjgara.cloudfront.net/users/366584/screenshots/2473300/404-01.png' })
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'card-content' },
+	                _react2.default.createElement(
+	                  'span',
+	                  { className: 'card-title activator grey-text text-darken-4' },
+	                  'Project',
+	                  _react2.default.createElement(
+	                    'i',
+	                    { className: 'material-icons right' },
+	                    'more_vert'
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'card-reveal' },
+	                _react2.default.createElement(
+	                  'span',
+	                  { className: 'card-title grey-text text-darken-4' },
+	                  'Project',
+	                  _react2.default.createElement(
+	                    'i',
+	                    { className: 'material-icons right' },
+	                    'close'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  'Oh snap! It looks like I haven\'t finished any projects worth showing. I\'m working on it though just hold up a bit.'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'card col s3 z-depth-4', style: { marginLeft: '6%', marginTop: '6%' } },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'card-image waves-effect waves-block waves-light' },
+	                _react2.default.createElement('img', { className: 'activator', src: 'https://d13yacurqjgara.cloudfront.net/users/366584/screenshots/2473300/404-01.png' })
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'card-content' },
+	                _react2.default.createElement(
+	                  'span',
+	                  { className: 'card-title activator grey-text text-darken-4' },
+	                  'Project',
+	                  _react2.default.createElement(
+	                    'i',
+	                    { className: 'material-icons right' },
+	                    'more_vert'
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'card-reveal' },
+	                _react2.default.createElement(
+	                  'span',
+	                  { className: 'card-title grey-text text-darken-4' },
+	                  'Project',
+	                  _react2.default.createElement(
+	                    'i',
+	                    { className: 'material-icons right' },
+	                    'close'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  'Oh snap! It looks like I haven\'t finished any projects worth showing. I\'m working on it though just hold up a bit.'
+	                )
+	              )
+	            )
+	          )
+	        )
+	      )
+	    )
+	  );
+	};
+
+	module.exports = Work;
 
 /***/ }
 /******/ ]);
