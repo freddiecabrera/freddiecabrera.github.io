@@ -117,7 +117,7 @@ const styles = {
   resumeDashColor:{color: '#2962ff'},
   resumeParaStyle: {fontStyle: 'light', fontWeight: '300', color: '#707070', fontSize: '12px'},
   dividerColors: {marginRight: '72%', backgroundColor: 'white'},
-  servicesContainer: {
+  workContainer: {
     textAlign: 'center',
     backgroundColor: 'white',
     overflow: 'hidden',

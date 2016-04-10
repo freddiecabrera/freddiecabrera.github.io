@@ -41,7 +41,7 @@ const NavBar = React.createClass({
           <li onClick={this.scrollHere.bind(this, 734)} style={tabHolder} href="#">STACK</li>
           <li onClick={this.scrollHere.bind(this, 1578)} style={tabHolder} href="#">SERVICES</li>
           <li onClick={this.scrollHere.bind(this, 2375)} style={tabHolder} href="#">RESUME</li>
-          <li onClick={this.scrollHere.bind(this, 5192)} style={tabHolder} href="#">WORK</li>
+          <li onClick={this.scrollHere.bind(this, 5087)} style={tabHolder} href="#">WORK</li>
           <li style={tabHolder} href="#">ABOUT</li>
         </ul>
         <h4 style={navHeader}>WELCOME</h4>

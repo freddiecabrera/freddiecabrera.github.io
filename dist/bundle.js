@@ -25162,11 +25162,9 @@
 
 	'use strict';
 
-	var _styles;
-
 	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-	var styles = (_styles = {
+	var styles = _defineProperty({
 	  spHeader: {
 	    fontWeight: '300',
 	    fontStyle: 'thin',
@@ -25284,14 +25282,15 @@
 	  },
 	  resumeDashColor: { color: '#2962ff' },
 	  resumeParaStyle: { fontStyle: 'light', fontWeight: '300', color: '#707070', fontSize: '12px' },
-	  dividerColors: { marginRight: '72%', backgroundColor: 'white' }
-	}, _defineProperty(_styles, 'servicesContainer', {
-	  textAlign: 'center',
-	  backgroundColor: 'white',
-	  overflow: 'hidden',
-	  minWidth: '100%',
-	  height: '950px'
-	}), _defineProperty(_styles, 'webStackTitle', { color: 'black', fontSize: '12px' }), _styles);
+	  dividerColors: { marginRight: '72%', backgroundColor: 'white' },
+	  workContainer: {
+	    textAlign: 'center',
+	    backgroundColor: 'white',
+	    overflow: 'hidden',
+	    minWidth: '100%',
+	    height: '950px'
+	  }
+	}, 'webStackTitle', { color: 'black', fontSize: '12px' });
 
 	module.exports = styles;
 
@@ -25432,7 +25431,7 @@
 	          ),
 	          _react2.default.createElement(
 	            'li',
-	            { onClick: this.scrollHere.bind(this, 5192), style: _style.tabHolder, href: '#' },
+	            { onClick: this.scrollHere.bind(this, 5087), style: _style.tabHolder, href: '#' },
 	            'WORK'
 	          ),
 	          _react2.default.createElement(
@@ -25553,7 +25552,7 @@
 	        ),
 	        _react2.default.createElement(
 	          'li',
-	          { onClick: this.scrollHere.bind(this, 5192) },
+	          { onClick: this.scrollHere.bind(this, 5087) },
 	          _react2.default.createElement(
 	            'a',
 	            { className: 'btn-floating waves-effect waves-light indigo accent-4 ' },
@@ -26400,7 +26399,7 @@
 	var Work = function Work(pops) {
 	  return _react2.default.createElement(
 	    'div',
-	    { style: _style.servicesContainer, className: 'container' },
+	    { style: _style.workContainer, className: 'container' },
 	    _react2.default.createElement(
 	      'div',
 	      { className: 'stackContainer faderTwo' },

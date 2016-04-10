@@ -1,8 +1,8 @@
 import React from 'react'
-import { servicesContainer, webStackIcon, workTitle, webStackPara } from '../styles/style'
+import { workContainer, webStackIcon, workTitle, webStackPara } from '../styles/style'
 
 const Work = pops => (
-  <div style={ servicesContainer } className='container'>
+  <div style={ workContainer } className='container'>
     <div className='stackContainer faderTwo'>
     <img  src='http://imgh.us/webdesign.svg' style={webStackIcon} />
       <p style={workTitle}>PORTFOLIO</p>
