@@ -25320,11 +25320,11 @@
 
 	var _Resume2 = _interopRequireDefault(_Resume);
 
-	var _Work = __webpack_require__(228);
+	var _Work = __webpack_require__(227);
 
 	var _Work2 = _interopRequireDefault(_Work);
 
-	var _Footer = __webpack_require__(227);
+	var _Footer = __webpack_require__(229);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -25448,7 +25448,7 @@
 	        _react2.default.createElement(
 	          'p',
 	          { style: _style.navHeaderP },
-	          'I hope you enjoy your experiance, scroll down and get to know me.'
+	          'I hope you enjoy your experience, scroll down and get to know me.'
 	        ),
 	        _react2.default.createElement('img', { onClick: this.scrollHere.bind(this, 734), src: 'http://imgh.us/mouse.svg', style: _style.mouseIcon }),
 	        this.state.HF
@@ -25683,7 +25683,7 @@
 	      _react2.default.createElement(
 	        'p',
 	        { style: _style.webStackPara },
-	        'This is the current stack that I like to work with. I also have some experiance with Angular 1.5.X'
+	        'This is the current stack that I like to work with. I also have some experience with Angular 1.5.X'
 	      )
 	    ),
 	    _react2.default.createElement('img', { style: _style.mongoDB, className: 'faderTwo', src: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/45/MongoDB-Logo.svg/1054px-MongoDB-Logo.svg.png' }),
@@ -26366,36 +26366,6 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var Footer = function Footer(props) {
-	  return _react2.default.createElement(
-	    'div',
-	    { style: _style.footerBlock },
-	    _react2.default.createElement(
-	      'p',
-	      { style: _style.footerText },
-	      '®2016 Freddie Cabrera. All Rights Reserved.',
-	      _react2.default.createElement('br', null),
-	      'Made with ♡ under the California sun.'
-	    )
-	  );
-	};
-
-	module.exports = Footer;
-
-/***/ },
-/* 228 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _style = __webpack_require__(219);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
 	var Work = function Work(pops) {
 	  return _react2.default.createElement(
 	    'div',
@@ -26461,7 +26431,13 @@
 	                _react2.default.createElement(
 	                  'p',
 	                  null,
-	                  'Oh snap! It looks like I haven\'t finished any projects worth showing. I\'m working on it though just hold up a bit.'
+	                  'Oh snap! It looks like I haven\'t finished any projects worth showing. I\'m working on it though just hold up a bit. Ths site is actually built using ReactJS check out the ',
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: 'https://github.com/freddiecabrera/freddiecabrera.github.io' },
+	                    'code'
+	                  ),
+	                  '.'
 	                )
 	              )
 	            ),
@@ -26503,7 +26479,13 @@
 	                _react2.default.createElement(
 	                  'p',
 	                  null,
-	                  'Oh snap! It looks like I haven\'t finished any projects worth showing. I\'m working on it though just hold up a bit.'
+	                  'Oh snap! It looks like I haven\'t finished any projects worth showing. I\'m working on it though just hold up a bit. Ths site is actually built using ReactJS check out the ',
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: 'https://github.com/freddiecabrera/freddiecabrera.github.io' },
+	                    'code'
+	                  ),
+	                  '.'
 	                )
 	              )
 	            ),
@@ -26545,7 +26527,13 @@
 	                _react2.default.createElement(
 	                  'p',
 	                  null,
-	                  'Oh snap! It looks like I haven\'t finished any projects worth showing. I\'m working on it though just hold up a bit.'
+	                  'Oh snap! It looks like I haven\'t finished any projects worth showing. I\'m working on it though just hold up a bit. Ths site is actually built using ReactJS check out the ',
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: 'https://github.com/freddiecabrera/freddiecabrera.github.io' },
+	                    'code'
+	                  ),
+	                  '.'
 	                )
 	              )
 	            )
@@ -26557,6 +26545,37 @@
 	};
 
 	module.exports = Work;
+
+/***/ },
+/* 228 */,
+/* 229 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _style = __webpack_require__(219);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Footer = function Footer(props) {
+	  return _react2.default.createElement(
+	    'div',
+	    { style: _style.footerBlock },
+	    _react2.default.createElement(
+	      'p',
+	      { style: _style.footerText },
+	      '®2016 Freddie Cabrera. All Rights Reserved.',
+	      _react2.default.createElement('br', null),
+	      'Made with ♡ under the California sun.'
+	    )
+	  );
+	};
+
+	module.exports = Footer;
 
 /***/ }
 /******/ ]);

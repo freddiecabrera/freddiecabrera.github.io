@@ -6,7 +6,7 @@ const WebStack = props => (
     <div className='stackContainer faderTwo'>
       <img  src='http://imgh.us/code_2.svg' style={webStackIcon} />
       <p style={webStackTitle}>STACK</p>
-      <p style={webStackPara}>This is the current stack that I like to work with. I also have some experiance with Angular 1.5.X</p>
+      <p style={webStackPara}>This is the current stack that I like to work with. I also have some experience with Angular 1.5.X</p>
     </div>
     <img style={mongoDB} className='faderTwo' src='https://upload.wikimedia.org/wikipedia/en/thumb/4/45/MongoDB-Logo.svg/1054px-MongoDB-Logo.svg.png' />
     <img style={expressJS} className='faderTwo' src='http://amt.in/img/services/express.png' />

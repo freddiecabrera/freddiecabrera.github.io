@@ -124,8 +124,7 @@ const styles = {
     minWidth: '100%',
     height: '950px'
   },
-  webStackTitle: {color: 'black', fontSize: '12px'},
-
+  webStackTitle: {color: 'black', fontSize: '12px'}
 }
 
 

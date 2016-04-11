@@ -19,7 +19,7 @@ const Work = pops => (
               </div>
               <div className="card-reveal">
                 <span className="card-title grey-text text-darken-4">Project<i className="material-icons right">close</i></span>
-                <p>Oh snap! It looks like I haven't finished any projects worth showing. I'm working on it though just hold up a bit.</p>
+                <p>Oh snap! It looks like I haven't finished any projects worth showing. I'm working on it though just hold up a bit. Ths site is actually built using ReactJS check out the <a href='https://github.com/freddiecabrera/freddiecabrera.github.io'>code</a>.</p>
               </div>
             </div>
             <div className="card col s3 z-depth-4" style={{marginLeft: '6%', marginTop: '6%'}}>
@@ -31,7 +31,7 @@ const Work = pops => (
               </div>
               <div className="card-reveal">
                 <span className="card-title grey-text text-darken-4">Project<i className="material-icons right">close</i></span>
-                <p>Oh snap! It looks like I haven't finished any projects worth showing. I'm working on it though just hold up a bit.</p>
+                <p>Oh snap! It looks like I haven't finished any projects worth showing. I'm working on it though just hold up a bit. Ths site is actually built using ReactJS check out the <a href='https://github.com/freddiecabrera/freddiecabrera.github.io'>code</a>.</p>
               </div>
             </div>
             <div className="card col s3 z-depth-4" style={{marginLeft: '6%', marginTop: '6%'}}>
@@ -43,7 +43,7 @@ const Work = pops => (
               </div>
               <div className="card-reveal">
                 <span className="card-title grey-text text-darken-4">Project<i className="material-icons right">close</i></span>
-                <p>Oh snap! It looks like I haven't finished any projects worth showing. I'm working on it though just hold up a bit.</p>
+                <p>Oh snap! It looks like I haven't finished any projects worth showing. I'm working on it though just hold up a bit. Ths site is actually built using ReactJS check out the <a href='https://github.com/freddiecabrera/freddiecabrera.github.io'>code</a>.</p>
               </div>
             </div>
           </div>

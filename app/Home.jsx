@@ -16,6 +16,7 @@ const Home = props => (
       <Work />
       <Footer />
   </div>
+
 )
 
 module.exports = Home
