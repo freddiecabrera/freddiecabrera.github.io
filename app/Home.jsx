@@ -4,6 +4,7 @@ import WebStack from './WebStack'
 import Services from './Services'
 import Resume from './Resume'
 import Work from './Work'
+import About from './About'
 import Footer from './Footer'
 
 
@@ -14,6 +15,7 @@ const Home = props => (
       <Services />
       <Resume />
       <Work />
+      <About />
       <Footer />
   </div>
 

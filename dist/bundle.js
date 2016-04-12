@@ -25162,135 +25162,227 @@
 
 	'use strict';
 
+	var _aboutBottomPara, _styles;
+
 	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-	var styles = _defineProperty({
-	  spHeader: {
-	    fontWeight: '300',
-	    fontStyle: 'thin',
-	    color: 'white',
-	    fontSize: '65px'
-	  },
-	  verticalText: {
-	    textDecoration: 'none',
-	    fontSize: '15px',
-	    textAlign: 'center',
-	    color: '#2962ff',
-	    position: 'fixed',
-	    top: '50%',
-	    left: '90%',
-	    transform: 'rotate(90deg)'
-	  },
-	  spTextContainer: {
-	    fontSize: '20px',
-	    fontWeight: '300',
-	    color: 'white',
-	    textAlign: 'center',
-	    position: 'fixed',
-	    top: '50%',
-	    left: '50%',
-	    transform: 'translate(-50%, -50%)'
-	  },
-	  socIcons: {
-	    height: '40px',
-	    margin: '5px'
-	  },
-	  tabHolder: {
-	    margin: '10px',
-	    cursor: 'pointer',
-	    color: '#2962ff',
-	    fontSize: '15px',
-	    fontWeight: '300',
-	    display: 'inline'
-	  },
-	  temp: {
-	    margin: '121.1rem 0 1.68rem 0'
-	  },
-	  mouseIcon: {
-	    width: '30px', height: '30px', marginLeft: '50%', marginTop: '20px', cursor: 'pointer'
-	  },
-	  navHeader: {
-	    marginTop: '180px',
-	    textAlign: 'center',
-	    fontWeight: '300',
-	    fontStyle: 'thin',
-	    color: 'white',
-	    fontSize: '65px'
-	  },
-	  navHeaderP: {
-	    color: 'white', textAlign: 'center'
-	  },
-	  mongoDB: { width: '260px', marginRight: '20px ' },
-	  expressJS: { width: '200px', marginRight: '20px ' },
-	  reactJS: { width: '90px', marginBottom: '-14px' },
-	  nodeJS: { marginBottom: '-70px', width: '200px' },
-	  webStackMargin: {
-	    textAlign: 'center',
-	    marginTop: '20%',
-	    backgroundColor: 'white',
-	    overflow: 'hidden',
-	    minWidth: '100%',
-	    height: '740px'
-	  },
-	  footerBlock: {
-	    paddingTop: '1%',
-	    backgroundColor: 'black',
-	    width: '100%',
-	    height: '200px'
-	  },
-	  footerText: { color: 'white', textAlign: 'center', paddingTop: '4.4%', fontWeight: '300', fontStyle: 'light' },
-	  webStackIcon: { height: '145px' },
-	  webStackTitle: { color: 'black', fontSize: '12px' },
-	  webStackPara: { color: '#777777', fontSize: '12px' },
-	  servicesContainer: {
-	    textAlign: 'center',
+	var styles = (_styles = {
+	    spHeader: {
+	        fontWeight: '300',
+	        fontStyle: 'thin',
+	        color: 'white',
+	        fontSize: '65px'
+	    },
+	    verticalText: {
+	        textDecoration: 'none',
+	        fontSize: '15px',
+	        textAlign: 'center',
+	        color: '#2962ff',
+	        position: 'fixed',
+	        top: '50%',
+	        left: '90%',
+	        transform: 'rotate(90deg)'
+	    },
+	    spTextContainer: {
+	        fontSize: '20px',
+	        fontWeight: '300',
+	        color: 'white',
+	        textAlign: 'center',
+	        position: 'fixed',
+	        top: '50%',
+	        left: '50%',
+	        transform: 'translate(-50%, -50%)'
+	    },
+	    tabHolder: {
+	        margin: '10px',
+	        cursor: 'pointer',
+	        color: '#2962ff',
+	        fontSize: '15px',
+	        fontWeight: '300',
+	        display: 'inline'
+	    },
+	    mouseIcon: {
+	        width: '30px',
+	        height: '30px',
+	        marginLeft: '50%',
+	        marginTop: '20px',
+	        cursor: 'pointer'
+	    },
+	    navHeader: {
+	        marginTop: '180px',
+	        textAlign: 'center',
+	        fontWeight: '300',
+	        fontStyle: 'thin',
+	        color: 'white',
+	        fontSize: '65px'
+	    },
+	    navHeaderP: {
+	        color: 'white',
+	        textAlign: 'center',
+	        fontWeight: '100'
+	    },
+	    mongoDB: {
+	        width: '260px',
+	        marginRight: '20px '
+	    },
+	    expressJS: {
+	        width: '200px',
+	        marginRight: '20px '
+	    },
+	    reactJS: {
+	        width: '90px',
+	        marginBottom: '-14px'
+	    },
+	    nodeJS: {
+	        marginBottom: '-70px',
+	        width: '200px'
+	    },
+	    webStackMargin: {
+	        textAlign: 'center',
+	        marginTop: '20%',
+	        backgroundColor: 'white',
+	        overflow: 'hidden',
+	        minWidth: '100%',
+	        height: '740px'
+	    },
+	    footerBlock: {
+	        paddingTop: '1%',
+	        backgroundColor: 'black',
+	        height: '300px'
+	    },
+	    footerBlock2: {
+	        paddingTop: '1%',
+	        backgroundColor: '#2962ff',
+	        height: '300px'
+	    },
+	    footerText: {
+	        color: 'white',
+	        textAlign: 'left',
+	        marginLeft: '3%',
+	        fontWeight: '300',
+	        marginTop: '12%'
+	    },
+	    footerText2: {
+	        color: 'white',
+	        textAlign: 'left',
+	        marginLeft: '9%',
+	        fontWeight: '300',
+	        marginTop: '34%'
+	    },
+	    webStackIcon: {
+	        height: '145px'
+	    },
+	    webStackTitle: {
+	        color: 'black',
+	        fontSize: '12px'
+	    },
+	    webStackPara: {
+	        color: '#777777',
+	        fontSize: '12px'
+	    },
+	    servicesContainer: {
+	        textAlign: 'center',
+	        backgroundColor: '#060812',
+	        overflow: 'hidden',
+	        minWidth: '100%',
+	        height: '835px'
+	    },
+	    servicesTitle: {
+	        color: 'white',
+	        fontSize: '12px'
+	    },
+	    servicesDisTitle: {
+	        marginLeft: '43%',
+	        marginTop: '-21%',
+	        color: 'white',
+	        fontSize: '15px',
+	        textAlign: '-webkit-left'
+	    },
+	    servicesDisPar1: {
+	        textAlign: '-webkit-left',
+	        marginLeft: '43%',
+	        marginTop: '-1%',
+	        color: '#6C6C6D',
+	        fontSize: '12px'
+	    },
+	    blockOne: {
+	        marginLeft: '15%'
+	    },
+	    servicesDisIcon: {
+	        height: '83px',
+	        marginTop: '52px',
+	        marginRight: '38px'
+	    },
+	    servicesIcon: {
+	        color: '#2962ff',
+	        fontSize: '120px',
+	        marginTop: '-4%'
+	    },
+	    resumeIcon: {
+	        height: '145px',
+	        marginTop: '14%'
+	    },
+	    resumeContainer: {
+	        textAlign: 'center',
+	        backgroundColor: '#06070C',
+	        overflow: 'hidden',
+	        minWidth: '100%'
+	    },
+	    resumeDashColor: {
+	        color: '#2962ff'
+	    },
+	    resumeParaStyle: {
+	        fontStyle: 'light',
+	        fontWeight: '300',
+	        color: '#707070',
+	        fontSize: '12px'
+	    },
+	    dividerColors: {
+	        marginRight: '72%',
+	        backgroundColor: 'white'
+	    },
+	    workContainer: {
+	        textAlign: 'center',
+	        backgroundColor: 'white',
+	        overflow: 'hidden',
+	        minWidth: '100%',
+	        height: '950px'
+	    }
+	}, _defineProperty(_styles, 'webStackTitle', {
+	    color: 'black',
+	    fontSize: '12px'
+	}), _defineProperty(_styles, 'aboutContainer', {
 	    backgroundColor: '#060812',
 	    overflow: 'hidden',
 	    minWidth: '100%',
-	    height: '835px'
-	  },
-	  servicesTitle: { color: 'white', fontSize: '12px' },
-	  servicesDisTitle: {
-	    marginLeft: '43%',
-	    marginTop: '-21%',
+	    height: '640px'
+	}), _defineProperty(_styles, 'aboutTitle', {
 	    color: 'white',
-	    fontSize: '15px',
-	    textAlign: '-webkit-left'
-	  },
-	  servicesDisPar1: {
-	    textAlign: '-webkit-left',
-	    marginLeft: '43%',
-	    marginTop: '-1%',
-	    color: '#6C6C6D',
-	    fontSize: '12px'
-	  },
-	  blockOne: {
-	    marginLeft: '15%'
-	  },
-	  servicesDisIcon: {
-	    height: '83px',
-	    marginTop: '52px',
-	    marginRight: '38px'
-	  },
-	  servicesIcon: { color: '#2962ff', fontSize: '120px', marginTop: '-4%' },
-	  resumeIcon: { height: '145px', marginTop: '14%' },
-	  resumeContainer: {
 	    textAlign: 'center',
-	    backgroundColor: '#06070C',
-	    overflow: 'hidden',
-	    minWidth: '100%'
-	  },
-	  resumeDashColor: { color: '#2962ff' },
-	  resumeParaStyle: { fontStyle: 'light', fontWeight: '300', color: '#707070', fontSize: '12px' },
-	  dividerColors: { marginRight: '72%', backgroundColor: 'white' },
-	  workContainer: {
-	    textAlign: 'center',
-	    backgroundColor: 'white',
-	    overflow: 'hidden',
-	    minWidth: '100%',
-	    height: '950px'
-	  }
-	}, 'webStackTitle', { color: 'black', fontSize: '12px' });
+	    fontWeight: '100',
+	    marginTop: '11%',
+	    fontSize: '35px'
+	}), _defineProperty(_styles, 'aboutTopPara', {
+	    color: 'white',
+	    marginTop: '6%',
+	    textAlign: 'left',
+	    marginLeft: '4%',
+	    marginRight: '4%'
+	}), _defineProperty(_styles, 'aboutBottomPara', (_aboutBottomPara = {
+	    color: '#707070',
+	    marginTop: '10px',
+	    textAlign: 'left',
+	    marginRight: '3%',
+	    marginLeft: '4%'
+	}, _defineProperty(_aboutBottomPara, 'marginTop', '3%'), _defineProperty(_aboutBottomPara, 'fontWeight', '300'), _defineProperty(_aboutBottomPara, 'fontSize', '18px'), _aboutBottomPara)), _defineProperty(_styles, 'aboutDivider', {
+	    backgroundColor: '#2962ff',
+	    marginLeft: '4%',
+	    marginRight: '59%',
+	    marginTop: '3%'
+	}), _defineProperty(_styles, 'socialMediaIcons', {
+	    margin: '10px',
+	    height: '30px'
+	}), _styles);
 
 	module.exports = styles;
 
@@ -25324,6 +25416,10 @@
 
 	var _Work2 = _interopRequireDefault(_Work);
 
+	var _About = __webpack_require__(230);
+
+	var _About2 = _interopRequireDefault(_About);
+
 	var _Footer = __webpack_require__(229);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
@@ -25339,6 +25435,7 @@
 	    _react2.default.createElement(_Services2.default, null),
 	    _react2.default.createElement(_Resume2.default, null),
 	    _react2.default.createElement(_Work2.default, null),
+	    _react2.default.createElement(_About2.default, null),
 	    _react2.default.createElement(_Footer2.default, null)
 	  );
 	};
@@ -25378,7 +25475,6 @@
 	    var lastScrollPosition = 0;
 	    window.onscroll = function () {
 	      var newScrollPosition = window.scrollY;
-	      console.log(newScrollPosition);
 	      if (newScrollPosition <= 71) {
 	        this.setState({
 	          HF: null
@@ -25436,7 +25532,7 @@
 	          ),
 	          _react2.default.createElement(
 	            'li',
-	            { style: _style.tabHolder, href: '#' },
+	            { onClick: this.scrollHere.bind(this, 5902), style: _style.tabHolder, href: '#' },
 	            'ABOUT'
 	          )
 	        ),
@@ -25565,7 +25661,7 @@
 	        ),
 	        _react2.default.createElement(
 	          'li',
-	          null,
+	          { onClick: this.scrollHere.bind(this, 5902) },
 	          _react2.default.createElement(
 	            'a',
 	            { className: 'btn-floating waves-effect waves-light indigo accent-4 ' },
@@ -26564,18 +26660,107 @@
 	var Footer = function Footer(props) {
 	  return _react2.default.createElement(
 	    'div',
-	    { style: _style.footerBlock },
+	    { style: { marginBottom: '0px' }, className: 'row' },
 	    _react2.default.createElement(
-	      'p',
-	      { style: _style.footerText },
-	      '®2016 Freddie Cabrera. All Rights Reserved.',
-	      _react2.default.createElement('br', null),
-	      'Made with ♡ under the California sun.'
+	      'div',
+	      { className: 'col s9', style: _style.footerBlock2 },
+	      _react2.default.createElement(
+	        'p',
+	        { style: _style.footerText },
+	        'I hope you enjoyed you\'re experience. If you would like to work together,',
+	        _react2.default.createElement('br', null),
+	        ' contact me at ',
+	        _react2.default.createElement(
+	          'a',
+	          { style: { color: 'white' }, href: 'mailto:freddie.cabrera@scndhalf.com' },
+	          'freddie.cabrera@scndhalf.com'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { style: { marginLeft: '3%' }, className: 'yee' },
+	        _react2.default.createElement(
+	          'a',
+	          { href: 'https://twitter.com/CabreraFreddie' },
+	          _react2.default.createElement('img', { src: 'http://imgh.us/symbol.svg', style: _style.socialMediaIcons })
+	        ),
+	        _react2.default.createElement(
+	          'a',
+	          { href: 'https://www.linkedin.com/in/freddiecabrera' },
+	          _react2.default.createElement('img', { src: 'http://imgh.us/social_3.svg', style: _style.socialMediaIcons })
+	        ),
+	        _react2.default.createElement(
+	          'a',
+	          { href: 'https://github.com/freddiecabrera' },
+	          _react2.default.createElement('img', { src: 'http://imgh.us/social-media_(1).svg', style: _style.socialMediaIcons })
+	        ),
+	        _react2.default.createElement(
+	          'a',
+	          { href: 'https://www.instagram.com/scndfred/' },
+	          _react2.default.createElement('img', { src: 'http://imgh.us/social-media.svg', style: _style.socialMediaIcons })
+	        )
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'col s3', style: _style.footerBlock },
+	      _react2.default.createElement(
+	        'p',
+	        { style: _style.footerText2 },
+	        '©2016 Freddie Cabrera.',
+	        _react2.default.createElement('br', null),
+	        'Made with ',
+	        _react2.default.createElement(
+	          'span',
+	          { style: { color: '#2962ff' } },
+	          '♡'
+	        ),
+	        ' under the California sun.'
+	      )
 	    )
 	  );
 	};
 
 	module.exports = Footer;
+
+/***/ },
+/* 230 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _style = __webpack_require__(219);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var About = function About(props) {
+	  return _react2.default.createElement(
+	    'div',
+	    { style: _style.aboutContainer },
+	    _react2.default.createElement(
+	      'h1',
+	      { style: _style.aboutTitle },
+	      'ABOUT'
+	    ),
+	    _react2.default.createElement(
+	      'h4',
+	      { style: _style.aboutTopPara },
+	      'I\'M A DEVELOPER, I’M A FOOTBALLER, I LOVE THE WORLD AND IT\'S NATURE, I LOVE DESIGN, AND I LOVE TECHNOLOGY. MY NAME IS FREDDIE CABRERA, AND I AM FROM BAKERSFIELD CALIFORNIA'
+	    ),
+	    _react2.default.createElement('div', { style: _style.aboutDivider, className: 'divider' }),
+	    _react2.default.createElement(
+	      'h5',
+	      { style: _style.aboutBottomPara },
+	      'I enjoy writing clean code as if it were a fine art. I am a Full Stack Web Developer, with front-end tendencies. I care about animals, climate change, deforestation, and ocean pollution.'
+	    )
+	  );
+	};
+
+	module.exports = About;
 
 /***/ }
 /******/ ]);
