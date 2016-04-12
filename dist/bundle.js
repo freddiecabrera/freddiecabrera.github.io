@@ -25468,7 +25468,7 @@
 	  displayName: 'NavBar',
 	  getInitialState: function getInitialState() {
 	    return {
-	      HF: ''
+	      HF: null
 	    };
 	  },
 	  componentDidMount: function componentDidMount() {
@@ -25476,13 +25476,9 @@
 	    window.onscroll = function () {
 	      var newScrollPosition = window.scrollY;
 	      if (newScrollPosition <= 71) {
-	        this.setState({
-	          HF: null
-	        });
+	        this.setState({ HF: null });
 	      } else {
-	        this.setState({
-	          HF: _react2.default.createElement(_HorizontalFab2.default, null)
-	        });
+	        this.setState({ HF: _react2.default.createElement(_HorizontalFab2.default, null) });
 	      }
 	      lastScrollPosition = newScrollPosition;
 	    }.bind(this);

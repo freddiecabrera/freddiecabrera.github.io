@@ -6,25 +6,21 @@ import scrollTo from './ScrollTo'
 const NavBar = React.createClass({
   getInitialState () {
     return ({
-      HF: ''
+      HF: null
     })
   },
-  componentDidMount () {
-    let  lastScrollPosition = 0
+componentDidMount() {
+    let lastScrollPosition = 0
     window.onscroll = function() {
-      let newScrollPosition = window.scrollY
-      if (newScrollPosition <= 71){
-        this.setState({
-          HF: null
-        })
-      }else{
-        this.setState({
-          HF: <HorizontalFab />
-        })
-      }
-      lastScrollPosition = newScrollPosition
+        let newScrollPosition = window.scrollY
+        if (newScrollPosition <= 71) {
+            this.setState({HF: null})
+        } else {
+            this.setState({HF: <HorizontalFab/>})
+        }
+        lastScrollPosition = newScrollPosition
     }.bind(this)
-  },
+},
   scrollHere (location) {
     scrollTo(location)
   },
