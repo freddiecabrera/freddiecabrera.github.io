@@ -156,7 +156,7 @@ const styles = {
     },
     resumeContainer: {
         textAlign: 'center',
-        backgroundColor: '#060A20',
+        backgroundColor: '#06070C',
         overflow: 'hidden',
         minWidth: '100%'
     },
@@ -173,7 +173,7 @@ const styles = {
         marginRight: '72%',
         backgroundColor: 'white'
     },
-    workContainer: {
+    workContainer: {git 
         textAlign: 'center',
         backgroundColor: 'white',
         overflow: 'hidden',
