@@ -6,7 +6,7 @@ const SplashPage = props => (
     <div className='fullscreen-bg'>
     <video className='fullscreen-bg__video' muted loop autoPlay>
       <source
-        src='http://bit.ly/1UHLoUb'
+        src='https://ia601500.us.archive.org/23/items/ps-video/ps-video.mp4'
       />
     </video>
     </div>

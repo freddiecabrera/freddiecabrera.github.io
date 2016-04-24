@@ -156,7 +156,7 @@ const styles = {
     },
     resumeContainer: {
         textAlign: 'center',
-        backgroundColor: '#060A20',
+        backgroundColor: '#06070C',
         overflow: 'hidden',
         minWidth: '100%'
     },
