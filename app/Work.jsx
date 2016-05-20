@@ -6,46 +6,13 @@ const Work = pops => (
     <div className='stackContainer faderTwo'>
     <img  src='http://imgh.us/webdesign.svg' style={webStackIcon} />
       <p style={workTitle}>PORTFOLIO</p>
-      <p style={webStackPara}>These are some of the projects I have built.</p>
+      <p style={webStackPara}>This is Ullibol, a data visualization web app. I haven't launched it yet but click on the images to check out the code/current progress.</p>
       <div className='container-fluid'>
         <div className='row'>
-          <div className='col s12'>
-            <div className="card col s3 z-depth-4" style={{marginLeft: '6%', marginTop: '6%'}}>
-              <div className="card-image waves-effect waves-block waves-light">
-                <img className="activator" src="https://d13yacurqjgara.cloudfront.net/users/366584/screenshots/2473300/404-01.png" />
-              </div>
-              <div className="card-content">
-                <span className="card-title activator grey-text text-darken-4">Project<i className="material-icons right">more_vert</i></span>
-              </div>
-              <div className="card-reveal">
-                <span className="card-title grey-text text-darken-4">Project<i className="material-icons right">close</i></span>
-                <p>Oh snap! It looks like I haven't finished any projects worth showing. I'm working on it though just hold up a bit. Ths site is actually built using ReactJS check out the <a href='https://github.com/freddiecabrera/freddiecabrera.github.io'>code</a>.</p>
-              </div>
-            </div>
-            <div className="card col s3 z-depth-4" style={{marginLeft: '6%', marginTop: '6%'}}>
-              <div className="card-image waves-effect waves-block waves-light">
-                <img className="activator" src="https://d13yacurqjgara.cloudfront.net/users/366584/screenshots/2473300/404-01.png" />
-              </div>
-              <div className="card-content">
-                <span className="card-title activator grey-text text-darken-4">Project<i className="material-icons right">more_vert</i></span>
-              </div>
-              <div className="card-reveal">
-                <span className="card-title grey-text text-darken-4">Project<i className="material-icons right">close</i></span>
-                <p>Oh snap! It looks like I haven't finished any projects worth showing. I'm working on it though just hold up a bit. Ths site is actually built using ReactJS check out the <a href='https://github.com/freddiecabrera/freddiecabrera.github.io'>code</a>.</p>
-              </div>
-            </div>
-            <div className="card col s3 z-depth-4" style={{marginLeft: '6%', marginTop: '6%'}}>
-              <div className="card-image waves-effect waves-block waves-light">
-                <img className="activator" src="https://d13yacurqjgara.cloudfront.net/users/366584/screenshots/2473300/404-01.png" />
-              </div>
-              <div className="card-content">
-                <span className="card-title activator grey-text text-darken-4">Project<i className="material-icons right">more_vert</i></span>
-              </div>
-              <div className="card-reveal">
-                <span className="card-title grey-text text-darken-4">Project<i className="material-icons right">close</i></span>
-                <p>Oh snap! It looks like I haven't finished any projects worth showing. I'm working on it though just hold up a bit. Ths site is actually built using ReactJS check out the <a href='https://github.com/freddiecabrera/freddiecabrera.github.io'>code</a>.</p>
-              </div>
-            </div>
+          <div className='col s12' style={{marginTop: '3em'}}>
+            <a href='https://github.com/freddiecabrera/ullibol-client' target='github'><img className='waves-effect waves-light z-depth-3' src='http://i.imgur.com/F6TpPON.png' style={{height: '13em', margin: '1em'}} /></a>
+            <a href='https://github.com/freddiecabrera/ullibol-client' target='github'><img className='waves-effect waves-light z-depth-3' src='http://i.imgur.com/wPjs6mv.png' style={{height: '13em', margin: '1em'}} /></a>
+            <a href='https://github.com/freddiecabrera/ullibol-client' target='github'><img className='waves-effect waves-light z-depth-3' src='http://i.imgur.com/DRcnCEZ.jpg' style={{height: '13em', margin: '1em'}} /></a>
           </div>
         </div>
       </div>

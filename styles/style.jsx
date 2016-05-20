@@ -66,8 +66,9 @@ const styles = {
         marginBottom: '-14px'
     },
     nodeJS: {
-        marginBottom: '-70px',
-        width: '200px'
+        width: '200px',
+        marginBottom: '-3em',
+        marginLeft: '2%'
     },
     webStackMargin: {
         textAlign: 'center',
@@ -173,12 +174,12 @@ const styles = {
         marginRight: '72%',
         backgroundColor: 'white'
     },
-    workContainer: {git 
+    workContainer: {
         textAlign: 'center',
         backgroundColor: 'white',
         overflow: 'hidden',
         minWidth: '100%',
-        height: '950px'
+        height: '55em'
     },
     webStackTitle: {
         color: 'black',

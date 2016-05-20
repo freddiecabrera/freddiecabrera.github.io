@@ -13,6 +13,7 @@ componentDidMount() {
     let lastScrollPosition = 0
     window.onscroll = function() {
         let newScrollPosition = window.scrollY
+        console.log(newScrollPosition);
         if (newScrollPosition <= 71) {
             this.setState({HF: null})
         } else {
@@ -36,7 +37,7 @@ componentDidMount() {
           <li onClick={this.scrollHere.bind(this, 734)} style={tabHolder} href="#">STACK</li>
           <li onClick={this.scrollHere.bind(this, 1578)} style={tabHolder} href="#">SERVICES</li>
           <li onClick={this.scrollHere.bind(this, 2375)} style={tabHolder} href="#">RESUME</li>
-          <li onClick={this.scrollHere.bind(this, 5087)} style={tabHolder} href="#">WORK</li>
+          <li onClick={this.scrollHere.bind(this, 5043)} style={tabHolder} href="#">WORK</li>
           <li onClick={this.scrollHere.bind(this, 5902)} style={tabHolder} href="#">ABOUT</li>
         </ul>
         <h4 style={navHeader}>WELCOME</h4>
