@@ -4,7 +4,7 @@ import { footerBlock, footerText, footerText2, footerBlock2, socialMediaIcons } 
 const Footer = props => (
   <div style={{marginBottom: '0px'}} className='row'>
   <div className='col s9' style={footerBlock2}>
-    <p style={footerText}>I hope you enjoyed you're experience. If you would like to work together,<br /> contact me at <a style={{color: 'white'}} href="mailto:freddie.cabrera@scndhalf.com">freddie.cabrera@scndhalf.com</a></p>
+    <p style={footerText}>I hope you enjoyed you're experience. If you would like to work together,<br /> contact me at <a style={{color: 'white'}} href="mailto:freddiecabrera10@gmail.com">freddiecabrera10@gmail.com</a></p>
     <div style={{marginLeft: '3%'}} className='yee'>
       <a href='https://twitter.com/CabreraFreddie'><img src='http://imgh.us/symbol.svg' style={socialMediaIcons}/></a>
       <a href='https://www.linkedin.com/in/freddiecabrera'><img src='http://imgh.us/social_3.svg' style={socialMediaIcons}/></a>

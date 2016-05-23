@@ -10,7 +10,7 @@ const SplashPage = props => (
       />
     </video>
     </div>
-    <a className='fader' style={verticalText} href="mailto:freddie.cabrera@scndhalf.com">freddie.cabrera@scndhalf.com</a>
+    <a className='fader' style={verticalText} href="mailto:freddie.cabrera@scndhalf.com">freddiecabrera10@gmail.com</a>
     <div className="fader" style={spTextContainer}>
       <h4 style={spHeader}>HELLO, I'M FREDDIE</h4>
       <p>Full Stack Web Developer</p>
