@@ -11,7 +11,7 @@ const Work = pops => (
         <div className='row'>
           <div className='col s12' style={{marginTop: '3em'}}>
             <a href='https://github.com/freddiecabrera/ullibol-client' target='github'><img className='waves-effect waves-light z-depth-3' src='http://i.imgur.com/F6TpPON.png' style={{height: '13em', margin: '1em'}} /></a>
-            <a href='https://github.com/freddiecabrera/ullibol-client' target='github'><img className='waves-effect waves-light z-depth-3' src='http://i.imgur.com/wPjs6mv.png' style={{height: '13em', margin: '1em'}} /></a>
+            <a href='https://github.com/freddiecabrera/ullibol-client' target='github'><img className='waves-effect waves-light z-depth-3' src='http://i.imgur.com/uyWH0ZS.png' style={{height: '13em', margin: '1em'}} /></a>
             <a href='https://github.com/freddiecabrera/ullibol-client' target='github'><img className='waves-effect waves-light z-depth-3' src='http://i.imgur.com/DRcnCEZ.jpg' style={{height: '13em', margin: '1em'}} /></a>
           </div>
         </div>
