@@ -25364,7 +25364,11 @@
 	  var useRefresh = !isSupported || forceRefresh;
 
 	  function getCurrentLocation(historyState) {
-	    historyState = historyState || window.history.state || {};
+	    try {
+	      historyState = historyState || window.history.state || {};
+	    } catch (e) {
+	      historyState = {};
+	    }
 
 	    var path = _DOMUtils.getWindowPath();
 	    var _historyState = historyState;
@@ -25607,8 +25611,8 @@
 	    ),
 	    _react2.default.createElement(
 	      'a',
-	      { className: 'fader', style: _style.verticalText, href: 'mailto:freddie.cabrera@scndhalf.com' },
-	      'freddie.cabrera@scndhalf.com'
+	      { className: 'fader', style: _style.verticalText, href: 'mailto:freddiecabrera10@gmail.com' },
+	      'freddiecabrera10@gmail.com'
 	    ),
 	    _react2.default.createElement(
 	      'div',
@@ -25899,10 +25903,6 @@
 
 	var _Services2 = _interopRequireDefault(_Services);
 
-	var _Resume = __webpack_require__(230);
-
-	var _Resume2 = _interopRequireDefault(_Resume);
-
 	var _Work = __webpack_require__(231);
 
 	var _Work2 = _interopRequireDefault(_Work);
@@ -25924,7 +25924,6 @@
 	    _react2.default.createElement(_NavBar2.default, null),
 	    _react2.default.createElement(_WebStack2.default, null),
 	    _react2.default.createElement(_Services2.default, null),
-	    _react2.default.createElement(_Resume2.default, null),
 	    _react2.default.createElement(_Work2.default, null),
 	    _react2.default.createElement(_About2.default, null),
 	    _react2.default.createElement(_Footer2.default, null)
@@ -25966,7 +25965,6 @@
 	    var lastScrollPosition = 0;
 	    window.onscroll = function () {
 	      var newScrollPosition = window.scrollY;
-	      console.log(newScrollPosition);
 	      if (newScrollPosition <= 71) {
 	        this.setState({ HF: null });
 	      } else {
@@ -26000,27 +25998,22 @@
 	          { className: 'menu' },
 	          _react2.default.createElement(
 	            'li',
-	            { onClick: this.scrollHere.bind(this, 734), style: _style.tabHolder, href: '#' },
+	            { onClick: this.scrollHere.bind(this, 785), style: _style.tabHolder, href: '#' },
 	            'STACK'
 	          ),
 	          _react2.default.createElement(
 	            'li',
-	            { onClick: this.scrollHere.bind(this, 1578), style: _style.tabHolder, href: '#' },
+	            { onClick: this.scrollHere.bind(this, 1602), style: _style.tabHolder, href: '#' },
 	            'SERVICES'
 	          ),
 	          _react2.default.createElement(
 	            'li',
-	            { onClick: this.scrollHere.bind(this, 2375), style: _style.tabHolder, href: '#' },
-	            'RESUME'
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            { onClick: this.scrollHere.bind(this, 5043), style: _style.tabHolder, href: '#' },
+	            { onClick: this.scrollHere.bind(this, 2412), style: _style.tabHolder, href: '#' },
 	            'WORK'
 	          ),
 	          _react2.default.createElement(
 	            'li',
-	            { onClick: this.scrollHere.bind(this, 5902), style: _style.tabHolder, href: '#' },
+	            { onClick: this.scrollHere.bind(this, 3202), style: _style.tabHolder, href: '#' },
 	            'ABOUT'
 	          )
 	        ),
@@ -26097,7 +26090,7 @@
 	        ),
 	        _react2.default.createElement(
 	          'li',
-	          { onClick: this.scrollHere.bind(this, 734) },
+	          { onClick: this.scrollHere.bind(this, 785) },
 	          _react2.default.createElement(
 	            'a',
 	            { className: 'btn-floating waves-effect waves-light indigo accent-4 ' },
@@ -26110,7 +26103,7 @@
 	        ),
 	        _react2.default.createElement(
 	          'li',
-	          { onClick: this.scrollHere.bind(this, 1578) },
+	          { onClick: this.scrollHere.bind(this, 1602) },
 	          _react2.default.createElement(
 	            'a',
 	            { className: 'btn-floating waves-effect waves-light indigo accent-4 ' },
@@ -26123,20 +26116,7 @@
 	        ),
 	        _react2.default.createElement(
 	          'li',
-	          { onClick: this.scrollHere.bind(this, 2375) },
-	          _react2.default.createElement(
-	            'a',
-	            { className: 'btn-floating waves-effect waves-light indigo accent-4 ' },
-	            _react2.default.createElement(
-	              'i',
-	              { className: 'material-icons' },
-	              'description'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'li',
-	          { onClick: this.scrollHere.bind(this, 5043) },
+	          { onClick: this.scrollHere.bind(this, 2412) },
 	          _react2.default.createElement(
 	            'a',
 	            { className: 'btn-floating waves-effect waves-light indigo accent-4 ' },
@@ -26149,7 +26129,7 @@
 	        ),
 	        _react2.default.createElement(
 	          'li',
-	          { onClick: this.scrollHere.bind(this, 5902) },
+	          { onClick: this.scrollHere.bind(this, 3202) },
 	          _react2.default.createElement(
 	            'a',
 	            { className: 'btn-floating waves-effect waves-light indigo accent-4 ' },
@@ -26401,546 +26381,7 @@
 	module.exports = Services;
 
 /***/ },
-/* 230 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _style = __webpack_require__(223);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var Resume = function Resume(props) {
-	  return _react2.default.createElement(
-	    'div',
-	    { style: _style.resumeContainer },
-	    _react2.default.createElement('img', { src: 'http://imgh.us/interface_2.svg', style: _style.resumeIcon }),
-	    _react2.default.createElement(
-	      'p',
-	      { style: _style.servicesTitle },
-	      'RESUME'
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'container-fluid', style: { color: 'white', marginTop: '10%' } },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'row' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'col s12' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'col s4', style: { marginLeft: '6%' } },
-	            _react2.default.createElement('img', { style: { height: '60px' }, src: 'http://imgh.us/suitcase.svg', alt: '' }),
-	            _react2.default.createElement(
-	              'h6',
-	              null,
-	              'WORK EXPERIENCE'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'col s5 push-s1', style: { textAlign: '-webkit-left' } },
-	            _react2.default.createElement(
-	              'p',
-	              { style: { backgroundColor: '#2962ff', minWidth: '300%' } },
-	              'OPERATOR 1'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'Weatherford COROD | April 2014 - October 2015 ',
-	              _react2.default.createElement('br', null),
-	              ' ',
-	              _react2.default.createElement(
-	                'a',
-	                { style: { color: '#2962ff' }, href: 'http://bit.ly/1qCDTSa' },
-	                'weatherford.com'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              { style: { color: '#2962ff' } },
-	              '19 months'
-	            ),
-	            _react2.default.createElement('div', { className: 'divider', style: { marginRight: '30%', backgroundColor: 'white' } }),
-	            _react2.default.createElement(
-	              'p',
-	              { style: _style.resumeParaStyle },
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Build incoming orders ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Ensure orders are correct ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Weld material with fusion welder ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Grind Weld to specified size ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Measure weld and material with micrometer ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Sand blast COROD ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Heat treat and harden material ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Build COROD strings to specified footage ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Maintain  clean worksite'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'col s12', style: { textAlign: '-webkit-left', marginLeft: '48%' } },
-	            _react2.default.createElement(
-	              'p',
-	              { style: { backgroundColor: '#2962ff', minWidth: '300%' } },
-	              'FIELD SERVICE TECHNICIAN'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'LIBERTY LIFT SOLUTIONS LLC | September 2013 - April 2014 ',
-	              _react2.default.createElement('br', null),
-	              ' ',
-	              _react2.default.createElement(
-	                'a',
-	                { style: { color: '#2962ff' }, href: 'http://bit.ly/1RWUw1v' },
-	                'libertylift.com'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              { style: { color: '#2962ff' } },
-	              '8 months'
-	            ),
-	            _react2.default.createElement('div', { className: 'divider', style: _style.dividerColors }),
-	            _react2.default.createElement(
-	              'p',
-	              { style: _style.resumeParaStyle },
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Preventive maintenance inspections ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Pumping unit installation ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Polished rod replacement ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Changing of belts, sheaves and prime movers ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Optimization – stroke changes, unit balancing and rod string adjustment ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Bearing maintenance ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Gas lift system setup and repair ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Hydraulic jet pump installation and service'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'col s12', style: { textAlign: '-webkit-left', marginLeft: '48%' } },
-	            _react2.default.createElement(
-	              'p',
-	              { style: { backgroundColor: '#2962ff', minWidth: '300%' } },
-	              'FIELD SERVICE TECHNICIAN'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'Weatherford ALS | March 2013 - August 2013 ',
-	              _react2.default.createElement('br', null),
-	              ' ',
-	              _react2.default.createElement(
-	                'a',
-	                { style: { color: '#2962ff' }, href: 'http://bit.ly/1WjtFlA' },
-	                'weatherford.com'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              { style: { color: '#2962ff' } },
-	              '6 months'
-	            ),
-	            _react2.default.createElement('div', { className: 'divider', style: _style.dividerColors }),
-	            _react2.default.createElement(
-	              'p',
-	              { style: _style.resumeParaStyle },
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Preventive maintenance inspections ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Pumping unit installation ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Polished rod replacement ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Changing of belts, sheaves and prime movers ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Optimization – stroke changes, unit balancing and rod string adjustment ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Bearing maintenance ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Gas lift system setup and repair ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Hydraulic jet pump installation and service'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'col s12', style: { textAlign: '-webkit-left', marginLeft: '48%' } },
-	            _react2.default.createElement(
-	              'p',
-	              { style: { backgroundColor: '#2962ff', minWidth: '300%' } },
-	              'SHOP HAND'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'Weatherford COROD | April 2013 - March 2013 ',
-	              _react2.default.createElement('br', null),
-	              ' ',
-	              _react2.default.createElement(
-	                'a',
-	                { style: { color: '#2962ff' }, href: 'http://bit.ly/1qCDTSa' },
-	                'weatherford.com'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              { style: { color: '#2962ff' } },
-	              '11 months'
-	            ),
-	            _react2.default.createElement('div', { className: 'divider', style: _style.dividerColors }),
-	            _react2.default.createElement(
-	              'p',
-	              { style: _style.resumeParaStyle },
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Operate 5 ton overhead cranes ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Order parts/tools needed for the entire plant. ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Shipping and receiving ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Maintenance ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Cut, weld, and grind COROD samples when needed ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Operate Komatsu loader ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Operate Mig welder ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Operate torch ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' Maintain clean worksite'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement('div', { className: 'divider col s12', style: { backgroundColor: '#707070', margin: '120px 0 120px 0' } }),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'col s12' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'col s4', style: { marginLeft: '6%' } },
-	            _react2.default.createElement('img', { style: { height: '60px' }, src: 'http://imgh.us/medical.svg', alt: '' }),
-	            _react2.default.createElement(
-	              'h6',
-	              null,
-	              'EDUCATION'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'col s5 push-s1', style: { textAlign: '-webkit-left' } },
-	            _react2.default.createElement(
-	              'p',
-	              { style: { backgroundColor: '#2962ff', minWidth: '300%' } },
-	              'FULL STACK WEB DEVELOPMENT'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'Self Taught University | June 2015 - Present '
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              { style: { color: '#2962ff' } },
-	              'Current'
-	            ),
-	            _react2.default.createElement('div', { className: 'divider', style: { marginRight: '30%', backgroundColor: 'white' } }),
-	            _react2.default.createElement(
-	              'p',
-	              { style: _style.resumeParaStyle },
-	              'I have been learning Full Stack Web Development from the best teachers in the industry through these websites: ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' ',
-	              _react2.default.createElement(
-	                'a',
-	                { style: _style.resumeParaStyle, href: 'http://www.reactjsprogram.com/' },
-	                ' reactjsprogram.com'
-	              ),
-	              ' ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' ',
-	              _react2.default.createElement(
-	                'a',
-	                { style: _style.resumeParaStyle, href: 'https://frontendmasters.com/courses/' },
-	                ' frontendmasters.com'
-	              ),
-	              ' ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' ',
-	              _react2.default.createElement(
-	                'a',
-	                { style: _style.resumeParaStyle, href: 'https://egghead.io/' },
-	                ' egghead.io'
-	              ),
-	              ' ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' ',
-	              _react2.default.createElement(
-	                'a',
-	                { style: _style.resumeParaStyle, href: 'https://www.freecodecamp.com/' },
-	                ' freecodecamp.com'
-	              ),
-	              ' ',
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'span',
-	                { style: _style.resumeDashColor },
-	                '-'
-	              ),
-	              ' ',
-	              _react2.default.createElement(
-	                'a',
-	                { style: _style.resumeParaStyle, href: 'https://www.coursera.org/' },
-	                ' coursera.org'
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'col s12', style: { textAlign: '-webkit-left', marginLeft: '48%', marginBottom: '10%' } },
-	            _react2.default.createElement(
-	              'p',
-	              { style: { backgroundColor: '#2962ff', minWidth: '300%' } },
-	              'TRANSFEROLOGY'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'Taft College | 2010 - 2011 '
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              { style: { color: '#2962ff' } },
-	              'Dropped Out'
-	            ),
-	            _react2.default.createElement('div', { className: 'divider', style: _style.dividerColors }),
-	            _react2.default.createElement(
-	              'p',
-	              { style: _style.resumeParaStyle },
-	              'I dropped out so that I could work to take care of my family and put my wife through college. I was ',
-	              _react2.default.createElement('br', null),
-	              ' working on transfer credits.'
-	            )
-	          )
-	        )
-	      )
-	    )
-	  );
-	};
-
-	module.exports = Resume;
-
-/***/ },
+/* 230 */,
 /* 231 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -26989,7 +26430,7 @@
 	            _react2.default.createElement(
 	              'a',
 	              { href: 'https://github.com/freddiecabrera/ullibol-client', target: 'github' },
-	              _react2.default.createElement('img', { className: 'waves-effect waves-light z-depth-3', src: 'http://i.imgur.com/wPjs6mv.png', style: { height: '13em', margin: '1em' } })
+	              _react2.default.createElement('img', { className: 'waves-effect waves-light z-depth-3', src: 'http://i.imgur.com/uyWH0ZS.png', style: { height: '13em', margin: '1em' } })
 	            ),
 	            _react2.default.createElement(
 	              'a',
@@ -27073,8 +26514,8 @@
 	        ' contact me at ',
 	        _react2.default.createElement(
 	          'a',
-	          { style: { color: 'white' }, href: 'mailto:freddie.cabrera@scndhalf.com' },
-	          'freddie.cabrera@scndhalf.com'
+	          { style: { color: 'white' }, href: 'mailto:freddiecabrera10@gmail.com' },
+	          'freddiecabrera10@gmail.com'
 	        )
 	      ),
 	      _react2.default.createElement(
