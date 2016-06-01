@@ -26430,7 +26430,7 @@
 	            _react2.default.createElement(
 	              'a',
 	              { href: 'https://github.com/freddiecabrera/ullibol-client', target: 'github' },
-	              _react2.default.createElement('img', { className: 'waves-effect waves-light z-depth-3', src: 'http://i.imgur.com/uyWH0ZS.png', style: { height: '13em', margin: '1em' } })
+	              _react2.default.createElement('img', { className: 'waves-effect waves-light z-depth-3', src: 'http://i.imgur.com/GjIn0EO.png', style: { height: '13em', margin: '1em' } })
 	            ),
 	            _react2.default.createElement(
 	              'a',
