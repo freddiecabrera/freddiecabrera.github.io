@@ -28,7 +28,7 @@ componentDidMount() {
     return (
       <div>
         <div className='bgImageContainer'>
-          <img src="https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?crop=entropy&dpr=2&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300" alt="background-image" className='bgImage'/>
+          <img src="https://images.unsplash.com/photo-1454779132693-e5cd0a216ed3?dpr=2&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb" alt="background-image" className='bgImage'/>
         </div>
         <div className='navContainer faderTwo'>
         <p className='pTag'>F</p>
