@@ -1,0 +1,63 @@
+body {
+    background-color: black
+}
+
+.block {
+    position: absolute;
+    margin: auto;
+    top: 30%;
+    right: 0;
+    left: 0;
+    width: 20%;
+    height: 20%;
+    text-align: center;
+}
+
+.inner-block {
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 25%;
+    right: 25%;
+    text-align: left;
+}
+
+.title {
+    color: #FFF;
+    font-weight: 100;
+}
+
+.job-title {
+    margin-top: -1%;
+    color: #FF2E88;
+    font-weight: 100;
+}
+
+.section-title {
+    margin-top: 1%;
+    color: #CCC;
+    font-weight: 100;
+}
+
+.skill {
+    color: #fff;
+    font-weight: 100;
+    margin-top: -1%;
+    font-weight: 100;
+    margin-left: 1%
+}
+
+.links {
+    color: #50E3C2;
+    font-weight: 100;
+    margin-top: -1%;
+    font-weight: 100;
+}
+
+footer {
+    position: absolute;
+    bottom: 2%;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
