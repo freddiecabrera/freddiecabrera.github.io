@@ -1,36 +1,41 @@
+@font-face { font-family: DM; src: url('DankMono-Regular.ttf'); } 
+
 body {
-    background-color: black
+    background-color: black;
+    font-family: DM;
 }
 
-.block {
+.container {
     position: absolute;
-    margin: auto;
-    top: 30%;
-    right: 0;
-    left: 0;
-    width: 20%;
-    height: 20%;
-    text-align: center;
+    top: 0; bottom: 0; left: 0; right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.inner-block {
-    position: absolute;
-    margin: auto;
-    right: 0;
-    left: 25%;
-    right: 25%;
-    text-align: left;
+.inner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -10%;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
 }
 
 .title {
     color: #FFF;
-    font-weight: 100;
 }
 
 .job-title {
     margin-top: -1%;
     color: #FF2E88;
-    font-weight: 100;
 }
 
 .section-title {
@@ -41,17 +46,12 @@ body {
 
 .skill {
     color: #fff;
-    font-weight: 100;
-    margin-top: -1%;
-    font-weight: 100;
-    margin-left: 1%
+    margin-top: -2%;
 }
 
 .links {
     color: #50E3C2;
-    font-weight: 100;
     margin-top: -1%;
-    font-weight: 100;
 }
 
 footer {
